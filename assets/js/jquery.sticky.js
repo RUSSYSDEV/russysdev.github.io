@@ -30,6 +30,7 @@
                 var s = sticked[i],
                     elementTop = s.stickyWrapper.offset().top,
                     etse = elementTop - s.topSpacing - extra - s.stickyElement.outerHeight();
+                    //console.log(elementTop, s.topSpacing, extra, s.stickyElement.outerHeight(), etse, scrollTop)
                 if (scrollTop <= etse) {
                     if (s.currentTop !== null) {
                         s.stickyElement

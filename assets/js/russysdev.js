@@ -16,12 +16,10 @@ jQuery(document).ready(function($){
 			$('a[href="#top"]').css('display', 'block');
 			var navbarH = $(this).outerHeight(true)
 			$("#rsd_navbar_left, #rsd_navbar_right").find('nav').each(function(){
-				console.log('qq')
 				var $nav = $(this),
 					offset = $nav.offset(),
 					$parent = $nav.parent(),
 					newTop = navbarH + offset.top - $parent.offset().top;
-				console.log(newTop)
 				this.dataset['parent'] = $nav.parent().attr('id');
 				$nav.appendTo( $('body') )
 					.css('position', 'fixed')
