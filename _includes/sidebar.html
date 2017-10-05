@@ -1,0 +1,10 @@
+<aside class="{{- sidebar.class -}}" id="{{- sidebar.id -}}">
+	<nav class="toc">
+		<h4>{{ sidebar.title }}</h4>
+	<ul>
+	{% for item in sidebar.folders %}
+		{%- include sidebar_item.html -%}
+	{% endfor %}
+	</ul>
+	</nav>
+</aside>

@@ -1,0 +1,31 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="target-densitydpi=device-dpi, initial-scale=1.0, user-scalable=no">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+  <link rel="shortcut icon" href="{{ "/assets/ico/favicon.png" | relative_url }}">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ "/assets/ico/apple-touch-icon-precomposed.png" | relative_url }}">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ "/assets/ico/apple-touch-icon-144-precomposed.png" | relative_url }}">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ "/assets/ico/apple-touch-icon-114-precomposed.png" | relative_url }}">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ "/assets/ico/apple-touch-icon-72-precomposed.png" | relative_url }}">
+  <link rel="apple-touch-icon-precomposed" href="{{ "/assets/ico/apple-touch-icon-57-precomposed.png" | relative_url }}">
+
+  <script src="{{ "/assets/js/jquery-1.11.3.min.js" | relative_url }}"></script>
+  <script src="{{ '/assets/js/bootstrap.min.js' | relative_url }}"></script>
+  <script src="{{ "/assets/js/jquery.flexyheader.js" | relative_url }}"></script>
+  <script src="{{ "/assets/js/jquery.sticky.js" | relative_url }}"></script>
+  <script src="{{ "/assets/js/russysdev.js" | relative_url }}"></script>
+
+  <link id="google-fonts-css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,500,800|Open+Sans+Condensed:300,400,700&subset=latin,cyrillic-ext" type="text/css" media="all">
+  <link rel="stylesheet" href="/assets/main.css">
+  
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+  {% include google-analytics.html %}
+  {% endif %}
+</head>

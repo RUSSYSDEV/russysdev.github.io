@@ -1,0 +1,87 @@
+{%- assign navurl = page.url | remove: 'index.html' | remove: '.html' -%}
+{%- assign menu2show = site.data.menu -%}
+{%- assign title = site.title -%}
+{%- assign tagline = site.tagline -%}
+{%- assign titlebrief = site.titlebrief -%}
+{%- assign menuclass = "rsd-main-menu" -%}
+
+{%- for item in site.data.menu -%}
+    {%- if item.subitems and navurl contains item.url  -%}
+        {%- assign menu2show = item.subitems -%}
+        {%- assign menuclass = "rsd-second-menu" -%}
+        {%- assign title = (site.owner | append: ': ') | append: item.text -%}
+        {%- assign tagline = item.tagline -%}
+        {%- assign titlebrief = (site.titlebrief | append: ' / ') | append: item.text -%}
+        {%- break -%}
+    {%- endif -%}
+{%- endfor -%}
+
+<header>
+    <div class="rsd-header"><a href="{{ '/' | relative_url }}">{{ title }}</a></div>
+    <div class="rsd-tagline">{{tagline}}</div>
+</header>
+
+<nav class="navbar navbar-default rsd-navbar navbar-fixed-top {{ menuclass}}" id="rsd_navbar_main">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#rsd-navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{ '/' | relative_url }}">{{ titlebrief }}</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="rsd-navbar-collapse">
+
+            <ul class="nav navbar-nav navbar-right rsd-share">
+                <li class="dropdown level-1"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-share-alt"> </i>
+                  <span class="share-description"> Share this page</span> <span class="caret dropdown-toggle" data-toggle="dropdown"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="<?php echo russysdev_blog_share_href('facebook') ?>" data-name="facebook" class="share-popup"><i class="fa fa-facebook"> </i><span class="share-description"> share on Facebook</span></a></li>
+                    <li><a href="<?php echo russysdev_blog_share_href('twitter') ?>" data-name="twitter" class="share-popup"><i class="fa fa-twitter"> </i><span class="share-description"> share via Twitter</span></a></li>
+                </ul>
+            </ul>
+
+            <ul id="menu-navbar" class="nav navbar-nav rsd-navbar-main">
+              {% for item in menu2show -%}
+                {%- assign text = item.text -%}
+                {%- if item.icon -%}
+                  {%- capture text -%}
+                  <i class="fa fa-{{ item.icon }} rsd-menu-icon" aria-hidden="true"></i> {{ item.text }}
+                  {%- endcapture -%}
+                {%- endif -%}
+                {%- if item.subitems -%}
+                  <li class="dropdown level-1"><a data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" 
+                    href="#">{{item.text}} <span class="caret dropdown-toggle"></span></a>
+                    <ul class="dropdown-menu">
+                      {% for subitem in item.subitems -%}
+                        {%- unless subitem.url contains 'http' -%}
+                          <li><a href="{{ subitem.url | relative_url }}">{{subitem.text}}</a></li>
+                        {%- endunless -%}
+                      {%- endfor -%}
+                    </ul>
+                  </li>
+                {%- else -%}
+                  {%- if item.url == navurl -%}
+                    <li class="level-1 active">
+                  {%- else -%}
+                    <li class="level-1">
+                  {%- endif -%}
+                  {%- if item.url contains 'http' -%}
+                    <a href="{{ item.url }}" target=_blank>{{ text }}</a>
+                  {%- else -%}
+                    <a href="{{ item.url }}">{{ text }}</a>
+                  {% endif %}
+                {% endif %}
+                </li>
+            {% endfor %}
+            </ul>
+            
+        </div><!-- /.navbar-collapse -->
+
+      </div><!-- /.container -->
+</nav>

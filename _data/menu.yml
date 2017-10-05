@@ -1,0 +1,49 @@
+- text: eiseXLSX
+  url: /eiseXLSX/
+  subitems:
+    - text: Project Home
+      url: /eiseXLSX/
+      icon: home
+    - text: Reference Manual
+      url: /eiseXLSX/docs
+      icon: book
+    - text: GitHub
+      url: https://github.com/easyise/eiseXLSX
+      icon: github
+    - text: Download
+      url: https://github.com/easyise/eiseXLSX/archive/master.zip
+      icon: download
+
+- text: eiseMail
+  url: /eiseMail/
+  subitems:
+    - text: Project Home
+      url: /eiseMail/
+      icon: home
+    - text: Reference Manual
+      url: /eiseMail/docs
+      icon: book
+
+
+- text: eiseIntra
+  url: /eiseIntra/
+  subitems:
+    - text: Project Home
+      url: /eiseIntra/
+      icon: home
+    - text: eiseIntra core
+      url: /eiseIntra/core
+      icon: book
+    - text: GitHub
+      url: http://github.com/easyise/eiseIntra
+      icon: github
+
+- text: docblock2web
+  url: /docblock2web/
+  subitems:
+    - text: Project Home
+      url: /docblock2web/
+      icon: home
+    - text: GitHub
+      url: http://github.com/easyise/docblock2web
+      icon: github

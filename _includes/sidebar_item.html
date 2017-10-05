@@ -1,0 +1,30 @@
+	{%- assign notlastlevel=true -%}
+	{%- if item.folders -%}
+		{%- assign notlastlevel=false -%}
+		{%- for subitem in item.folders -%}
+		{%- if subitem.folders -%}
+		{%- assign notlastlevel=true -%}
+		{%- endif -%}
+		{%- endfor -%}
+	{%- endif -%}
+
+	{%- if notlastlevel -%}
+	<li>
+	{%- else -%}
+	<li class="members">
+	{%- endif -%}
+		{%- if item.url -%}
+	    	<a href="{{ item.url }}">
+			{%- endif -%}
+			{{ item.title }}
+	    	{%- if item.url -%}
+	    	</a>
+	    	{%- endif -%}
+	    	{%- if item.folders -%}
+	    	<ul>
+	    		{% for item in item.folders -%}
+				    {%- include sidebar_item.html -%}
+	    		{%- endfor -%}
+	    	</ul>
+	    	{%- endif %}
+    </li>

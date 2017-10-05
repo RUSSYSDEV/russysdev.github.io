@@ -1,0 +1,47 @@
+<!-- Footer -->
+    <footer class="text-center">
+        <div class="rsd-footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="rsd-footer-col col-md-2 col-md-offset-2">
+                        <h3>CONTACTS</h3>
+                        <p>{{ site.contacts | markdownify }}</p>
+                    </div>
+                    <div class="rsd-footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="http://www.facebook.com/{{ site.facebook_username }}" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="http://www.twitter.com/{{ site.twitter_username }}" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="http://www.github.com/{{ site.github_username }}" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rsd-footer-col col-md-2">
+                        <h3>ABOUT</h3>
+                        {{ site.about | markdownify }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rsd-footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; RUSSYSDEV 2015-{{ 'now' | date: "%Y" }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="page-scroll visible-xs visible-sm scroll-top">
+        <a class="btn btn-primary" href="#top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>

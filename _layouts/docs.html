@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{%- include head.html -%}
+
+{%- assign columns = 12 -%}
+
+<body data-spy="scroll" data-target=".navbar" data-offset="75" class="rsd-docs {{ page.class }}">
+
+{% include header.html -%}
+
+    <section class="rsd-main-section">
+    	<div class="container">
+    		<div class="row">
+{%- if page.sidebar_left -%}		
+{%- assign sidebar = page.sidebar_left -%}
+{%- assign columns = columns | minus: 2 -%}
+{%- include sidebar.html -%}
+{%- endif -%}
+
+{%- if page.sidebar_right -%}		
+{%- assign sidebar = page.sidebar_right -%}
+{%- assign columns = columns | minus: 2 -%}
+{%- capture sidebar_right -%}
+{%- include sidebar.html -%}
+{%- endcapture -%}
+{%- endif -%}
+
+    			<div class="col-md-{{ columns }} rsd-contents">
+      			{{content}}
+      			</div>
+
+{{- sidebar_right -}}
+
+      		</div>
+      	</div>
+    </section>
+
+{% include footer.html %}
+
+</body>
+</html>

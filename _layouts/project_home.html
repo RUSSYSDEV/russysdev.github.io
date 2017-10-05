@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{%- include head.html -%}
+
+<body data-spy="scroll" data-target=".navbar" data-offset="75" class="rsd-project-home {{ page.class }}">
+
+{% include header.html -%}
+
+    <section class="rsd-main-section">
+    	<div class="container">
+    		<div class="row">
+
+    			<aside class="col-md-2" id="rsd_navbar_left">
+				<nav class="toc">
+					<h4 style="display:none">Table of contents</h4>
+				</nav>
+			</aside>
+
+    			<div class="col-md-8 rsd-contents">
+      			{{ content }}
+
+      			</div>
+
+      		</div>
+      	</div>
+    </section>
+
+{% include footer.html %}
+
+</body>
+</html>
