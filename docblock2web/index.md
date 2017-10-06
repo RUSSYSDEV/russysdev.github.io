@@ -13,7 +13,7 @@ docblock2web
 
 Make your code documentation more friendly by publishing it on the web (e.g. on [http://github.io]()).
 
-This tool extracts inline documentation blocks made according to [phpDocumentor](https://www.phpdoc.org) specifications  from your source code file and creates [Markdown](https://daringfireball.net/projects/markdown/syntax) that couls be used with [Jekyll](https://jekyllrb.com), WordPress, WiKi, etc.
+This tool extracts inline documentation blocks made according to [phpDocumentor](https://www.phpdoc.org) specifications  from your source code file and creates [Markdown](https://daringfireball.net/projects/markdown/syntax) that could be used with [Jekyll](https://jekyllrb.com), WordPress, WiKi, etc.
 
 [JSDoc](http://usejsdoc.org) support will be added in nearest feature.
 
