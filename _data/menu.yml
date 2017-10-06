@@ -1,5 +1,6 @@
 - text: eiseXLSX
   url: /eiseXLSX/
+  tagline: Read/Write XLSX files with PHP
   subitems:
     - text: Project Home
       url: /eiseXLSX/
@@ -16,6 +17,7 @@
 
 - text: eiseMail
   url: /eiseMail/
+  tagline: Send/receive email PHP library
   subitems:
     - text: Project Home
       url: /eiseMail/
@@ -27,6 +29,7 @@
 
 - text: eiseIntra
   url: /eiseIntra/
+  tagline: Instant administrative backend for your application
   subitems:
     - text: Project Home
       url: /eiseIntra/
@@ -40,6 +43,7 @@
 
 - text: docblock2web
   url: /docblock2web/
+  tagline: "Code documentation: from inline to online!"
   subitems:
     - text: Project Home
       url: /docblock2web/

@@ -16,18 +16,17 @@
 title: "RUSSYSDEV: projects"
 owner: "RUSSYSDEV"
 titlebrief: "RSD: projects"
+tagline: open source projects and development exprience
 contacts: >
   Mail: [ie@e-ise.com](mailto:ie@e-ise.com) 
   Phone/WhatsApp/Telegram: +7-916-6740530  
-  WWW: [http://www.russysdev.com/](http://www.russysdev.com/)  
+  <http://www.russysdev.com/> 
 
 about: > 
   Made by [Ilya S. Eliseev](mailto:ie@e-ise.com), web developer, data scientist, consultant.
 email: info@russysdev.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Open source projects and development experience by RUSSYSDEV. Libraries in PHP/JavaScript/Python. Home of eiseIntra and eiseXLSX.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 facebook_username: russysdev

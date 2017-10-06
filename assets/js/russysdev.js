@@ -8,12 +8,105 @@ jQuery(document).ready(function($){
 			$(this).appendTo($sidebar)
 			$sidebar.find('h4').css('display', 'block')
 		}
-	})
+	});
+
+	// sticky sidebars
+	$('nav.toc').each(function(){
+		var $sidebar = $(this),
+			h = $sidebar.outerHeight(true),
+			docH = $(document).height(),
+			top = $('nav.rsd-navbar').outerHeight(true),
+			bottom = $('footer').outerHeight(true),
+			offset = $sidebar.offset().top,
+			topThreshold = offset - top,
+			bottomThreshold = docH - bottom,
+			windowTop_prev = null,
+			absoluteTop = function(topToSet){
+				if(!this.hasClass('absolute')){
+					this.removeClass('fixed');
+					this.css({ top: topToSet, bottom: '' })
+					this.addClass('absolute');
+				}
+			},
+			absoluteBottom = function(){
+				if(!this.hasClass('absolute')){
+					this.removeClass('fixed');
+					this.css({ top: '', bottom: bottom });
+					this.addClass('absolute');
+				}
+			},
+			fixedBottom = function(){
+				if(!this.hasClass('fixed')){
+					this.removeClass('absolute');
+					this.css({ top: '', bottom: 0 })
+					this.addClass('fixed');
+				}
+			},
+			fixedTop = function(){
+				if(!this.hasClass('fixed')){
+					this.removeClass('absolute');
+					this.css({ top: top, bottom: '' })
+					this.addClass('fixed');
+				}
+			},
+			normal = function(){
+				this.removeClass('absolute')
+				this.removeClass('fixed')
+				this.css({ top: '', bottom: '' })
+			}
+			scroller = function(){
+				var windowTop = $(window).scrollTop(),
+					winH = $(window).height(),
+					curOffset = $sidebar.offset().top,
+					h = $sidebar.outerHeight(true);
+
+				if(windowTop < topThreshold){
+					normal.call($sidebar)
+				} else {
+
+					if(windowTop_prev===null){
+						absoluteTop.call($sidebar, windowTop - offset + top)
+						windowTop_prev = windowTop;
+					}
+
+					//console.log( windowTop, windowTop_prev)
+
+					if( windowTop > windowTop_prev){ // if we scoll down
+						if(curOffset+h-15 < windowTop+winH && curOffset+h < bottomThreshold){
+							fixedBottom.call($sidebar)
+						} else {
+							absoluteTop.call($sidebar, curOffset - offset + top)
+						}
+					} else { // if we scroll up
+						if(curOffset < windowTop){
+							absoluteTop.call($sidebar, curOffset)
+						} else {
+							fixedTop.call($sidebar)
+						}
+					}
+
+					windowTop_prev = windowTop
+					
+				}
+
+
+			}
+		if (window.addEventListener) {
+	        window.addEventListener('scroll', scroller, false);
+	        window.addEventListener('resize', scroller, false);
+	    } else if (window.attachEvent) {
+	        window.attachEvent('onscroll', scroller);
+	        window.attachEvent('onresize', scroller);
+	    }
+	    scroller();
+
+	});
 
 	$(".rsd-navbar").sticky({
 		topSpacing : 0
 		, onstickstart: function(){
 			$('a[href="#top"]').css('display', 'block');
+			return;
 			var navbarH = $(this).outerHeight(true)
 			$("#rsd_navbar_left, #rsd_navbar_right").find('nav').each(function(){
 				var $nav = $(this),

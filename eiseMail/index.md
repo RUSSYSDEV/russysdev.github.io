@@ -2,7 +2,7 @@
 layout: project_home
 title: "eiseMail: send/receive email PHP library"
 excerpt: >
-  Read mail, answer on it from PHP with eiseSMTP and eiseIMAP, lightweight and simple alternatives to native libraries and mail() function.
+  Read mail messages, answer it with PHP using eiseSMTP and eiseIMAP, lightweight and simple alternatives to native libraries and mail() function.
 
 ---
 

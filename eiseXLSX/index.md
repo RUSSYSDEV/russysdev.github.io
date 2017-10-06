@@ -50,11 +50,15 @@ __Package__: eiseXLSX [https://github.com/easyise/eiseXLSX]()
 
 ### Install with Composer
 
+To be advised soon.
+
 ### Manual install
+
+[Download](https://github.com/easyise/eiseXLSX/archive/master.zip) and unzip the library to any folder inside your document root. No special permissions required. Verify that PHP is allowed to write to temporary directory (/tmp, /var/tmp).
 
 ### Examples
 
-#### Write:
+#### Write
 
 - Obtain formatted XLSX from your customer
 - Unzip it to the folder inside your project (or any other folder you like)
@@ -72,7 +76,7 @@ $xlsx->Output("mynewfile.xlsx", "F"); // save the file
 ```
 {: .language-php}
 
-#### Read:
+#### Read
 
 ```
 <?php

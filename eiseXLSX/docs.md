@@ -1,17 +1,11 @@
 ---
 layout: docs
-class: eisexlsx
-title: "eiseXLSX: Reference Manual"
-excerpt: >
-  Read and write XLSX files with native cell addresses like A1 or R1C1, fill-in templates prepared by your customer!
-  This class was designed for server-side manipulations with uploaded spreadsheets in Microsoft® Excel™ 2007-2011-2013 file format – OpenXML SpereadsheetML.
-
+title: "eiseIntra core"
 sidebar_left:
-  title: Functional Reference
+  title: Class reference
   class: rsd-navbar-left
   id: "rsd_navbar_left"
   folders:
-
     - title: "class eiseXLSX:"
       url: "#eisexlsx"
       folders:
@@ -92,13 +86,11 @@ sidebar_left:
 
 
 
-
 sidebar_right:
-  title: By Category
+  title: By category
   class: rsd-navbar-right
   id: "rsd_navbar_right"
   folders:
-
     - title: "Cell address routines"
       folders:
 
@@ -182,18 +174,50 @@ sidebar_right:
         url: "#eisexlsx-selectsheet"
         folders:
 
-
 ---
-{{ page.title }}
+
+eiseXLSX
 ===
 
+XLSX file data read-write library that operates with native cell addresses like A1 or R1C1.
+
+This class was designed for server-side manipulations with uploaded spreadsheets in Microsoft® Excel™ 2007-2011-2013 file format – OpenXML SpereadsheetML.
+
+Current version of this library allows to read user-uploaded file contents and to write data to preliminary uploaded template file and send it back to the user:
+* it allows to change existing cell data
+* clone rows and fill-in new rows with data
+* clone sheets within workbook, remove unnecessary sheets
+* colorization of cells.
+
+This library offers the easiest way to make Excel™-based data exchange with information systems written in PHP.
+
+Users are no longer need to convert Excel™ spreadsheets to CSV and other formats, they can simply upload data to the website using their worksheets.
+
+You can use files received from users as your website’s output document templates with 100% match of cell formats, sheet layout, design, etc. With eiseXLSX you can stop wasting your time working on output documents layout – you can just ask your customer staff to prepare documents they’d like to see in XLSX format. Then you can put these files to the server and fill them with necessary data using PHP.
+
+Unlike other PHP libraries for XLSX files manipulation eiseXLSX is simple, compact and laconic. You don’t need to learn XLSX file format to operate with it. Just use only cell addresses in any formats (A1 and R1C1 are supported) and data from your website database. As simple as that.
+  
+>  Based on:  
+>  Simple XLSX   
+>  @author kirik <mail@kirik.ws>  
+>  @version 0.1  
+>  Developed under GNU General Public License, version 3: <http://www.gnu.org/licenses/lgpl.txt>
+
+__Package__: eiseXLSX <https://github.com/easyise/eiseXLSX>  
+__Copyright__: (c) 2012-2017 Ilya S. Eliseev  
+__License__: GNU Public License <http://opensource.org/licenses/gpl-license.php>  
+__Version__: 1.6beta  
+__Author__: Ilya Eliseev <ie@e-ise.com>, Continutors: Igor Zhuravlev, Dmitry Zakharov  
+__Uses__: SimpleXML, DOM  
 
 
-## <a name="eisexlsx"></a>class eiseXLSX
+
+
+## <a name="eisexlsx"></a>class __eiseXLSX__
 
 The class that creates objects with Excel workbooks inside. Public class methods are allowing to make any declared manupulations with the workbook.
 
-### <a name="eisexlsx-__construct"></a>public function __construct( $templatePath='' )
+### <a name="eisexlsx-__construct"></a>public function ____construct( $templatePath='' )__
 
 The constructor. It reads Excel workbook supplied as the template or data source to read. It can be either XLSX file or unzipped one, into the directory speicfied in $templatePath parameter. Unzipping XLSX files will reduce your server CPU load ;).
 
@@ -207,7 +231,7 @@ __Parameters__:
 * __$templatePath__ (string) - The path to Excel workbook file or directory.
 
 
-### <a name="eisexlsx-data"></a>public function data($cellAddress, $data = null, $t = "s")
+### <a name="eisexlsx-data"></a>public function __data($cellAddress, $data = null, $t = "s")__
 
 eiseXLSX::data() function reads or sets data for cell with specified $cellAddress. If parameter $data is omitted, function just returns current cell data. If $data contains something, function tries to set it.
 Data types note:
@@ -221,14 +245,14 @@ __Parameters__:
 * __$cellAddress__ (string) - both R1C1 and A1 address formats are acceptable. Case-insensitive. Examples: "AI75", "r10c25".
 * __$data__ (mixed) - data to set. If not set at function call, function just returns data. If set, function sets this data for given cell.
 * __$t__ (string) - if omitted eiseXLSX accepts the data as string and put contents to sharedStrings.xml. Otherwise it tries to re-format date as seconds or number as real one with period as decimal separator.
-  Possible values: 'n' - for numeric values like integer or real numbers;
-    's' (default) - for strings, but if string can be evaluated as number using is_numeric() PHP function, numeric value will be set;
-    'd' - for datetime values.
-  
+	Possible values: 'n' - for numeric values like integer or real numbers;
+	  's' (default) - for strings, but if string can be evaluated as number using is_numeric() PHP function, numeric value will be set;
+	  'd' - for datetime values.
+	
 __Returns__: string - cell data before new value is set (if any).
 
 
-### <a name="eisexlsx-getdatavalidationlist"></a>public function getDataValidationList($cellAddress)
+### <a name="eisexlsx-getdatavalidationlist"></a>public function __getDataValidationList($cellAddress)__
 
 This function returns contents of drop-down list for given cell, if Data Validation / List option is activated for given cell. If there's no list, this function returns NULL, if reference to drop-down list cell range is broken, it returns FALSE. Otherwise it returns associative array with origin cell addresses as keys and cell data as values. Function eiseXLSX::getDataByRange() (that uses eiseXLSX::data()) is used to obtain cell data.
 eiseXLSX::getDataValidatioList() can be useful when you need to obtain contents of reference tables of spreadsheet fields when you try to import the workbook into the database. 
@@ -239,11 +263,11 @@ __Category__: Sheet manipulations
 
 __Parameters__: 
 * __$cellAddress__ (string) - Cell address. Both R1C1 and A1 address formats are acceptable. Case-insensitive. Examples: "AI75", "r10c25".
-  
+	
 __Returns__: mixed - NULL if there's no data validation, associative array of drop-down values with origin cell addresses as keys and FALSE in case of broken/invalid reference to drop-down cell range.
 
 
-### <a name="eisexlsx-getdatabyrange"></a>public function getDataByRange($range)
+### <a name="eisexlsx-getdatabyrange"></a>public function __getDataByRange($range)__
 
 This function returns an array of data obtained from the specified $range. This range can be as well as formula-formatted (e.g. "Sheet 2!$A1:$B12") as normal particular range (like "B15:B50"). Cell list, range list and other range formats are NOT SUPPORTED (YET).
 Reference sheets (if any) should exist in the same workbook as current sheet.
@@ -254,11 +278,11 @@ __Category__: Sheet manipulations
 
 __Parameters__: 
 * __$range__ (string) - cell range in normal format (like "A14:X14") or formula-based refrence ("Sheet 3!$Z15:$Y17").
-  
+	
 __Returns__: array of data obtained from range with R1C1 address as keys and values as they've been obtained with data() function. If range cannot be located, function returns FALSE.
 
 
-### <a name="eisexlsx-getrowcount"></a>public function getRowCount()
+### <a name="eisexlsx-getrowcount"></a>public function __getRowCount()__
 
 This method returns number of rows in active sheet.
 
@@ -267,7 +291,7 @@ __Category__: Sheet manipulations
 __Returns__: int - row number of the last row.
 
 
-### <a name="eisexlsx-fill"></a>public function fill($cellAddress, $fillColor)
+### <a name="eisexlsx-fill"></a>public function __fill($cellAddress, $fillColor)__
 
 Fills cell at $cellAddress with color $fillColor or clears cell off any background color, if $fillColor is set to NULL, 0 or ''.
 If cell is not found or color string is wrongly specified, it throws an exception.
@@ -277,11 +301,11 @@ __Category__: Cell decoration
 __Parameters__: 
 * __$cellAddress__ (string) - Cell address, both A1 and R1C1 address formats are acceptable.
 * __$fillColor__ (string) - HTML-style color in Hex pairs, for example: #FFCC66. Should always start with hash.
-  
+	
 __Returns__: simpleXML object that represents specified cell.
 
 
-### <a name="eisexlsx-getfillcolor"></a>public function getFillColor($cellAddress)
+### <a name="eisexlsx-getfillcolor"></a>public function __getFillColor($cellAddress)__
 
 This function returns fill color of cell located at $cellAddress. Color is returned as W3C hexadecimal value that starts with hash symbol.
 If cell is not found it throws an exception.
@@ -292,11 +316,11 @@ __Category__: Cell decoration
 
 __Parameters__: 
 * __$cellAddress__ (string) - Cell address, both A1 and R1C1 address formats are acceptable.
-  
+	
 __Returns__: string Color in W3C format.
 
 
-### <a name="eisexlsx-clonerow"></a>public function cloneRow($ySrc, $yDest)
+### <a name="eisexlsx-clonerow"></a>public function __cloneRow($ySrc, $yDest)__
 
 eiseXLSX::cloneRow() method clones row with number $ySrc to $yDest, other existing cells are moved down by one position. 
 All row contents and styles are simply copied from origin.
@@ -309,11 +333,11 @@ __Category__: Sheet manipulations
 __Parameters__: 
 * __$ySrc__ (int) - row number of origin. Starts from 1, as user can see on Excel screen
 * __$yDest__ (int) - destination row number.
-  
+	
 __Returns__: object simpleXML object with newly added row
 
 
-### <a name="eisexlsx-findsheetbyname"></a>public function findSheetByName($name)
+### <a name="eisexlsx-findsheetbyname"></a>public function __findSheetByName($name)__
 
 This function returns sheet ID as specified in sheetId attribute of the officeDocument.
 
@@ -321,11 +345,11 @@ __Category__: Workbook manipulations
 
 __Parameters__: 
 * $name string - sheet name to find
-  
+	
 __Returns__: string - sheet ID if sheet found in current workbook, otherwise false.
 
 
-### <a name="eisexlsx-selectsheet"></a>public function selectSheet($id)
+### <a name="eisexlsx-selectsheet"></a>public function __selectSheet($id)__
 
 Function sets sheet with specified $id as active. Internally, $this->_cSheet becomes a sheet with $id.
 If such sheet cannot be located in the workbook, function throws an exception.
@@ -335,11 +359,11 @@ __Category__: Workbook manipulations
 
 __Parameters__: 
 * __$id__ (string) - sheet ID as specified in sheetId attribute of the officeDocument.
-  
+	
 __Returns__: object SimpleXML object that represents the sheet.
 
 
-### <a name="eisexlsx-clonesheet"></a>public function cloneSheet($originSheetId, $newSheetName = '')
+### <a name="eisexlsx-clonesheet"></a>public function __cloneSheet($originSheetId, $newSheetName = '')__
 
 This method clones original sheet with sheetId supplied with $originSheetId parameter into new one labeled as $newSheetName
 New sheet doesn't become active. eiseXLSX::cloneSheet() returns sheetId of newly created sheet.
@@ -349,11 +373,11 @@ __Category__: Workbook manipulations
 __Parameters__: 
 * __$originSheetId__ (string) - sheetId of origin sheet
 * __$newSheetName__ (string) - new sheet label, if not set eiseXLSX sets 'Sheet <newSheetId>' as label.
-  
+	
 __Returns__: string $newSheetId - id of sheet added to the workbook.
 
 
-### <a name="eisexlsx-renamesheet"></a>public function renameSheet($sheetId, $newName)
+### <a name="eisexlsx-renamesheet"></a>public function __renameSheet($sheetId, $newName)__
 
 This method changes sheet tab label for specified sheet with $sheetId to $newName.
 
@@ -362,11 +386,11 @@ __Category__: Workbook manipulations
 __Parameters__: 
 * __$sheetId__ (string) - sheetId of the sheet to be renamed
 * __$newName__ (string) - new sheet tab label
-  
+	
 __Returns__: null
 
 
-### <a name="eisexlsx-removesheet"></a>public function removeSheet($id)
+### <a name="eisexlsx-removesheet"></a>public function __removeSheet($id)__
 
 removeSheet() method deletes the sheet specified with $id parameter.
 
@@ -374,11 +398,11 @@ __Category__: Workbook manipulations
 
 __Parameters__: 
 * __$id__ (string) - sheetId of target sheet
-  
+	
 __Returns__: null
 
 
-### <a name="eisexlsx-output"></a>public function Output($fileName = "", $dest = "S")
+### <a name="eisexlsx-output"></a>public function __Output($fileName = "", $dest = "S")__
 
 This method outputs Excel sheet, with the following destination options specified in $dest parameter:
 
@@ -402,11 +426,11 @@ __Category__: Read / Write
 __Parameters__: 
 * __$fileName__ (string) - (optional) File name. If not set, original template name will be used. Missing file extension (.xlsx) will be added automatically.
 * __$dest__ (string) - (optional) Destination of method output. See description above.
-  
+	
 __Returns__: string Workbook file name when $dest="F" or string with workbook content when $dest="S". When $dest="I" or "D" it quits PHP with die().
 
 
-### <a name="eisexlsx-checkaddressinrange"></a>static function checkAddressInRange($adrNeedle, $adrHaystack)
+### <a name="eisexlsx-checkaddressinrange"></a>static function __checkAddressInRange($adrNeedle, $adrHaystack)__
 
 checkAddressInRange() function checks whether given cell belong to specified cell address range.
 
@@ -415,11 +439,11 @@ __Category__: Cell address routines
 __Parameters__: 
 * __$adrNeedle__ (string) - cell address to check. Both R1C1 and A1 address formats are acceptable. Case-insensitive. Examples: "AI75", "r10c25".
 * __$adrHaystack__ (string) - cell address range. Both R1C1 and A1 address formats are acceptable. Can be as single cell, cell range (cell1:cell2) and list of cells and ranges, space-separated. Case-insensitive. Examples: "AI75:AJ86", "r10c25:r1c25 ", "C168 AF113:AG116 AI113:AI116 L113:N116".
-  
+	
 __Returns__: boolean - true if cell belongs to the range, false otherwise
 
 
-### <a name="eisexlsx-getrangearea"></a>static function getRangeArea($range)
+### <a name="eisexlsx-getrangearea"></a>static function __getRangeArea($range)__
 
 This function returns array of top-left and bottom-right coordinates of particular range area.
 
@@ -427,11 +451,11 @@ __Category__: Cell address routines
 
 __Parameters__: 
 * $range string - cell address range. Both R1C1 and A1 address formats are acceptable. Can be as single cell or cell range (cell1:cell2). Case-insensitive. Examples: "AI75:AJ86", "r10c25:r1c25".
-  
+	
 __Returns__: array - array(array($x_left, $x_right), array($y_top, $y_bottom)) where x and y are column and row number correspondingly.
 
 
-### <a name="eisexlsx-celladdress"></a>static function cellAddress($cellAddress)
+### <a name="eisexlsx-celladdress"></a>static function __cellAddress($cellAddress)__
 
 Receives cell address in R1C1 or A1 format and returns address variations as array.
 
@@ -441,7 +465,7 @@ __Category__: Cell address routines
 
 __Parameters__: 
 * __$cellAddress__ (string) - both R1C1 and A1 address formats are acceptable. Case-insensitive. Examples: "AI75", "r10c25".
-  
+	
 __Returns__: array `[ $x, $y, $a1, $r1c1 ]`:
 * $x - column number (starting from 1)
 * $y - row number (starting from 1)
@@ -452,17 +476,17 @@ __Returns__: array `[ $x, $y, $a1, $r1c1 ]`:
 
 
 
-## <a name="eisexlsx_exception"></a>class eiseXLSX_Exception
+## <a name="eisexlsx_exception"></a>class __eiseXLSX_Exception__
 
 Throwable class for exceptions.
 
-### <a name="eisexlsx_exception-__construct"></a>public function __construct($msg)
+### <a name="eisexlsx_exception-__construct"></a>public function ____construct($msg)__
 
 Class constructor, updates message and prints debug backtrace.
 
 
 
-### <a name="eisexlsx_exception-__tostring"></a>public function __toString()
+### <a name="eisexlsx_exception-__tostring"></a>public function ____toString()__
 
 Allows to get message directly from the caught exception
 

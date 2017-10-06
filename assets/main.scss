@@ -1174,6 +1174,16 @@ section.rsd-home .rsd-contents h4 {
 
 nav.toc {
 
+	position: static;
+	
+	&.absolute {
+		position: absolute;
+	}
+
+	&.fixed {
+		position: fixed
+	}
+
 	background-color: transparent;
 
 
