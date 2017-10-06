@@ -1,3 +1,17 @@
+- text: eiseIntra
+  url: /eiseIntra/
+  tagline: Instant administrative backend for your application
+  subitems:
+    - text: Project Home
+      url: /eiseIntra/
+      icon: home
+    - text: eiseIntra core
+      url: /eiseIntra/core
+      icon: book
+    - text: GitHub
+      url: http://github.com/easyise/eiseIntra
+      icon: github
+
 - text: eiseXLSX
   url: /eiseXLSX/
   tagline: Read/Write XLSX files with PHP
@@ -25,21 +39,6 @@
     - text: Reference Manual
       url: /eiseMail/docs
       icon: book
-
-
-- text: eiseIntra
-  url: /eiseIntra/
-  tagline: Instant administrative backend for your application
-  subitems:
-    - text: Project Home
-      url: /eiseIntra/
-      icon: home
-    - text: eiseIntra core
-      url: /eiseIntra/core
-      icon: book
-    - text: GitHub
-      url: http://github.com/easyise/eiseIntra
-      icon: github
 
 - text: docblock2web
   url: /docblock2web/

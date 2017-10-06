@@ -74,7 +74,7 @@ $xlsx->data('A4', 'Hello, world!'); // either A1 or R1C1 are accepted
 
 $xlsx->Output("mynewfile.xlsx", "F"); // save the file
 ```
-{: .language-php}
+{:.language-php}
 
 #### Read
 

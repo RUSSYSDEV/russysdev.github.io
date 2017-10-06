@@ -2,7 +2,7 @@
 layout: project_home
 title: "docblock2web: phpDoc/JSDoc to Markdown"
 excerpt: >
-  Generate Markdown from your phpDoc/JSDoc inline documentation for further publishing with Jekyll, GitHub pages, WordPress etc.
+  Generate Markdown from your phpDoc inline documentation for further publishing with Jekyll, GitHub pages, WordPress etc.
 
 ---
 
@@ -13,7 +13,11 @@ docblock2web
 
 Make your code documentation more friendly by publishing it on the web (e.g. on [http://github.io]()).
 
-This tool extracts inline documentation blocks made according to [phpDocumentor](https://www.phpdoc.org) or [JSDoc](http://usejsdoc.org) specifications from your source code file and creates [Markdown](https://daringfireball.net/projects/markdown/syntax) that couls be used with [Jekyll](https://jekyllrb.com), WordPress, WiKi, etc.
+This tool extracts inline documentation blocks made according to [phpDocumentor](https://www.phpdoc.org) specifications  from your source code file and creates [Markdown](https://daringfireball.net/projects/markdown/syntax) that couls be used with [Jekyll](https://jekyllrb.com), WordPress, WiKi, etc.
+
+[JSDoc](http://usejsdoc.org) support will be added in nearest feature.
+
+Online version is coming soon also.
 
 Usage example:
 ``` python
