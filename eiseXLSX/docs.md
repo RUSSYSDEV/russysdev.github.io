@@ -206,7 +206,7 @@ Unlike other PHP libraries for XLSX files manipulation eiseXLSX is simple, compa
 __Package__: eiseXLSX <https://github.com/easyise/eiseXLSX>  
 __Copyright__: (c) 2012-2017 Ilya S. Eliseev  
 __License__: GNU Public License <http://opensource.org/licenses/gpl-license.php>  
-__Version__: 1.6beta  
+__Version__: 1.9beta  
 __Author__: Ilya Eliseev <ie@e-ise.com>, Continutors: Igor Zhuravlev, Dmitry Zakharov  
 __Uses__: SimpleXML, DOM  
 

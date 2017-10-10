@@ -95,7 +95,7 @@ echo ($myData = $xlsx->data("R15C10")); //voilat!
 
 ## Changelog
 
-New in version 1.6: 
+New in version 1.9: 
 
 - method eiseXLSX::getDataValidationList($cellAddress) - returns data validation list as associative array.
 - static method eiseXLSX::checkAddressInRange() - checks whether cell address belong to given range or not.
