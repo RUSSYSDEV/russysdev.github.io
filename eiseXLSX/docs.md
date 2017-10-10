@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: "eiseIntra core"
+title: "eiseXLSX reference"
 sidebar_left:
   title: Class reference
   class: rsd-navbar-left
