@@ -32,6 +32,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 facebook_username: russysdev
 twitter_username: russysdev
 github_username:  easyise
+google_analytics: UA-69261496-2
 
 # Build settings
 markdown: kramdown

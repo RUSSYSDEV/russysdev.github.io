@@ -58,7 +58,7 @@ To be advised soon.
 
 ### Examples
 
-#### Write
+Write:
 
 - Obtain formatted XLSX from your customer
 - Unzip it to the folder inside your project (or any other folder you like)
@@ -76,7 +76,7 @@ $xlsx->Output("mynewfile.xlsx", "F"); // save the file
 ```
 {:.language-php}
 
-#### Read
+Read:
 
 ```
 <?php
