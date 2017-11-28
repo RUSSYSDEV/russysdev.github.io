@@ -34,4 +34,4 @@ __Author__: : Ilya Eliseev <ie@e-ise.com>, contributors: Dmitry Zakharov, Igor Z
 
 ## Installation/Download
 
-To be advised. Will be available on GitHub/PHPClasses soon!
+[Download](https://github.com/easyise/eiseMail/archive/master.zip) and unzip the library to any folder inside your document root. No special permissions required.
