@@ -52,11 +52,18 @@ IMPORTANT: Verify that PHP is allowed to write to the temporary directory (/tmp,
 
 ### Install with Composer
 
-Add the following line into your project's composer.json:
+Add the following line into your project's `composer.json`, inside "require" block:
 
 ```
-"require": {"easyise/eisexlsx":"1.6.*"}
+{
+	"require": {
+		
+		"easyise/eisexlsx": "1.6.*", 
+
+	}
 ```
+
+Run `composer install` or `php composet.phar install` in your project root directory.
 
 Add this line to the PHP script:
 
