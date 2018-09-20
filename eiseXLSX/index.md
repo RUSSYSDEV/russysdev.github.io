@@ -39,22 +39,45 @@ Unlike other PHP libraries for XLSX files manipulation eiseXLSX is simple, compa
 >  @version 0.1  
 >  Developed under GNU General Public License, version 3: [http://www.gnu.org/licenses/lgpl.txt]()
 
-__Copyright__: (c) 2012-2017 Ilya S. Eliseev  
-__License__: GNU Public License [http://opensource.org/licenses/gpl-license.php]()  
-__Author__: Ilya Eliseev [ie@e-ise.com]()  
+__Copyright__: (c) 2012-2018 Ilya S. Eliseev  
+__License__: GNU Public License [http://opensource.org/licenses/gpl-license.php](http://opensource.org/licenses/gpl-license.php)  
+__Author__: Ilya Eliseev [ie@e-ise.com](mailto:ie@e-ise.com)  
 __Uses__: SimpleXML, DOM  
 __Version__: 1.6beta  
-__Package__: eiseXLSX [https://github.com/easyise/eiseXLSX]()  
+__Package__: eiseXLSX [https://github.com/easyise/eiseXLSX](https://github.com/easyise/eiseXLSX)  
 
 ## Installation / Usage
 
+IMPORTANT: Verify that PHP is allowed to write to the temporary directory (/tmp, /var/tmp).
+
 ### Install with Composer
 
-To be advised soon.
+Add the following line into your project's composer.json:
+
+```
+"require": {"easyise/eisexlsx":"1.6.*"}
+```
+
+Add this line to the PHP script:
+
+```
+<?php
+require __DIR__.'/vendor/autoload.php';
+```
+{:.language-php}
+
 
 ### Manual install
 
-[Download](https://github.com/easyise/eiseXLSX/archive/master.zip) and unzip the library to any folder inside your document root. No special permissions required. Verify that PHP is allowed to write to temporary directory (/tmp, /var/tmp).
+[Download](https://github.com/easyise/eiseXLSX/archive/master.zip) and unzip the library to any folder inside your document root. No special permissions required. 
+
+Include/require this file into your project:
+```
+<?php
+include_once $path_to_eiseXLSX_root."/eiseXLSX.php";
+```
+{:.language-php}
+
 
 ### Examples
 
@@ -65,9 +88,6 @@ Write:
 - Make PHP script and include similar code inside:
 
 ```
-<?php
-include_once "eiseXLSX/eiseXLSX.php";
-
 $xlsx = new eiseXLSX("myemptyfile.xlsx");
 
 $xlsx->data('A4', 'Hello, world!'); // either A1 or R1C1 are accepted
@@ -78,10 +98,7 @@ $xlsx->Output("mynewfile.xlsx", "F"); // save the file
 
 Read:
 
-```
-<?php
-include_once "eiseXLSX.php";
-        
+```       
 try { //give it a try to avoid any uncaught error 
       // caused by broken content of uploaded file
     $xlsx = new eiseXLSX($_FILES["fileXLSX"]["tmp_name"]);
@@ -95,7 +112,7 @@ echo ($myData = $xlsx->data("R15C10")); //voilat!
 
 ## Changelog
 
-New in version 1.9: 
+New in version 1.6: 
 
 - method eiseXLSX::getDataValidationList($cellAddress) - returns data validation list as associative array.
 - static method eiseXLSX::checkAddressInRange() - checks whether cell address belong to given range or not.

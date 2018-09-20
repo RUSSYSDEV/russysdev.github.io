@@ -181,7 +181,7 @@ eiseXLSX
 
 XLSX file data read-write library that operates with native cell addresses like A1 or R1C1.
 
-This class was designed for server-side manipulations with uploaded spreadsheets in Microsoft® Excel™ 2007-2011-2013 file format – OpenXML SpereadsheetML.
+This class was designed for server-side manipulations with uploaded spreadsheets in Microsoft® Excel™ 2007-2011-2013 file format – OpenXML SpreadsheetML.
 
 Current version of this library allows to read user-uploaded file contents and to write data to preliminary uploaded template file and send it back to the user:
 * it allows to change existing cell data
