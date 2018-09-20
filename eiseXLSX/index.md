@@ -43,7 +43,7 @@ __Copyright__: (c) 2012-2018 Ilya S. Eliseev
 __License__: GNU Public License [http://opensource.org/licenses/gpl-license.php](http://opensource.org/licenses/gpl-license.php)  
 __Author__: Ilya Eliseev [ie@e-ise.com](mailto:ie@e-ise.com)  
 __Uses__: SimpleXML, DOM  
-__Version__: 1.6beta  
+__Version__: 1.6  
 __Package__: eiseXLSX [https://github.com/easyise/eiseXLSX](https://github.com/easyise/eiseXLSX)  
 
 ## Installation / Usage
@@ -112,7 +112,10 @@ echo ($myData = $xlsx->data("R15C10")); //voilat!
 
 ## Changelog
 
-New in version 1.6: 
+New in version 1.6 (20.09.2018): 
+
+- Composer support
+- locale dependency fix
 
 - method eiseXLSX::getDataValidationList($cellAddress) - returns data validation list as associative array.
 - static method eiseXLSX::checkAddressInRange() - checks whether cell address belong to given range or not.
