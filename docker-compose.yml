@@ -1,0 +1,28 @@
+#
+# from the same directory as the Dockerfile, where the only other file
+# is this docker-compose.yml file, run:
+# docker compose up
+# then open http://localhost:4000
+
+# services:
+#   j-serve:
+#     container_name: j-cont
+#     image: j-image
+#     command: bash -c "cd myblog && bundle exec jekyll serve --host 0.0.0.0"
+#     ports:
+#       - 4000:4000
+#     volumes:
+#       - .:/_site
+
+
+# no version needed since 2020
+
+services:
+  jekyll:
+    container_name: russysdev.github.io
+    image: bretfisher/jekyll-serve
+    command: bash -c "cd /site && bundle exec jekyll serve --host 0.0.0.0"
+    volumes:
+      - .:/site
+    ports:
+      - '4000:4000'
