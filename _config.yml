@@ -18,9 +18,9 @@ owner: "RUSSYSDEV"
 titlebrief: "RSD: projects"
 tagline: open source projects and development exprience
 contacts: >
-  Mail: [ie@e-ise.com](mailto:ie@e-ise.com) 
+  Mail: [ie@e-ise.com](mailto:ie@e-ise.com)  <br>
   Telegram: easyise  
-  <https://russysdev.github.io/> 
+  <https://russysdev.github.io/>  
 
 about: > 
   Made by [Ilya S. Eliseev](mailto:ie@e-ise.com), web developer, data scientist, consultant.
@@ -32,6 +32,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 facebook_username: russysdev
 twitter_username: russysdev
 github_username:  easyise
+telegram_username: easyise
+linkedin_username: easyise
 google_analytics: UA-69261496-2
 
 # Build settings
