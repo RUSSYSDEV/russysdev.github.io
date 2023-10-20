@@ -45,7 +45,7 @@ exclude:
 
 lsi: false
 safe: true
-source: /Users/ise/Documents/Works/russysdev/russysdev.github.io
+source: /site
 incremental: false
 highlighter: rouge
 gist:
