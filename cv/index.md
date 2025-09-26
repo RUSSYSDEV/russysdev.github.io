@@ -63,7 +63,3 @@ Data Scientist, full-stack developer and instructor with 25+ years in IT and 5+ 
 * English — Fluent (C2)
 
 ---
-
-👉 This fits on a single page, keeps only **strongest highlights**, and is recruiter-friendly for both **Data Science** and **Instructor/Consultant** roles.
-
-Do you want me to make **two tailored versions** (one for *teaching* jobs, one for *data science/consulting*)?
