@@ -15,7 +15,7 @@ GitHub: [github.com/easyise](https://github.com/easyise) • Portfolio: [russysd
 
 ## **Profile**
 
-Data Scientist, full-stack developer and instructor with 25+ years in IT and 5+ years of teaching. Expert in Python, ML, and computer vision, with strong track record in integrating AI/ML into corporate systems. Author of multiple Python & ML courses (1,500+ students). Experienced consultant, lecturer, and project developer.
+Data Scientist, full-stack developer and instructor with 25+ years in IT and 5+ years of teaching. Expert in Python, PHP, ML, databases and computer vision, with strong track record in integrating AI/ML into corporate systems. Author of multiple Python & ML courses (1,500+ students). Experienced consultant, lecturer, and project developer.
 
 ---
 
