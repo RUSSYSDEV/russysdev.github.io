@@ -63,3 +63,5 @@ Data Scientist, full-stack developer and instructor with 25+ years in IT and 5+ 
 * English — Fluent (C2)
 
 ---
+
+---
