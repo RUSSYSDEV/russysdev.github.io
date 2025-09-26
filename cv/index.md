@@ -62,4 +62,4 @@ Data Scientist, full-stack developer and instructor with 25+ years in IT and 5+ 
 * Russian — Native
 * English — Fluent (C2)
 
-
+---
