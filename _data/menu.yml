@@ -50,3 +50,7 @@
     - text: GitHub
       url: http://github.com/easyise/docblock2web
       icon: github
+
+- text: Ilya's CV
+  url: /cv/
+  tagline: "Ilya's Curriculum Vitaecv"
