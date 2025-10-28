@@ -2,11 +2,14 @@
   url: /eiseIntra/
   tagline: Instant administrative backend for your application
   subitems:
-    - text: Project Home
+    - text: Home
       url: /eiseIntra/
       icon: home
-    - text: eiseIntra core
+    - text: Core Classes
       url: /eiseIntra/core
+      icon: book
+    - text: Items, Actions & Tracing
+      url: /eiseIntra/item
       icon: book
     - text: GitHub
       url: http://github.com/easyise/eiseIntra
@@ -53,4 +56,4 @@
 
 - text: Ilya's CV
   url: /cv/
-  tagline: "Ilya's Curriculum Vitaecv"
+  tagline: "Ilya's Curriculum Vitae"
