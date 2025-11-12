@@ -11,6 +11,9 @@
     - text: Items, Actions & Tracing
       url: /eiseIntra/item
       icon: book
+    - text: Grids/Lists
+      url: /eiseIntra/gridlist
+      icon: book
     - text: GitHub
       url: http://github.com/easyise/eiseIntra
       icon: github
