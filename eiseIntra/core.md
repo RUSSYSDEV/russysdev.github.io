@@ -1,789 +1,789 @@
 ---
 layout: docs
-title: "Item and Action Tracing"
+title: "eiseIntra core classes"
 sidebar_left:
-  title: Class reference
-  class: rsd-navbar-left
-  id: "rsd_navbar_left"
+  title: "PHP Classes"
+  class: "rsd-navbar-left"
+  id: "rsd-navbar_left"
   folders:
     - title: "class eiseIntra:"
-      url: "#eiseintra"
+      url: "#cls_eiseintra"
       folders:
 
       - title: "public properties:"
         folders:
 
         - title: "$arrUsrData"
-          url: "#eiseintra-arrusrdata"
+          url: "#eiseintra_prop_arrusrdata"
 
         - title: "$usrID"
-          url: "#eiseintra-usrid"
+          url: "#eiseintra_prop_usrid"
 
         - title: "$conf"
-          url: "#eiseintra-conf"
+          url: "#eiseintra_prop_conf"
 
         - title: "$local"
-          url: "#eiseintra-local"
+          url: "#eiseintra_prop_local"
 
       - title: "static properties:"
         folders:
 
         - title: "$defaultConf"
-          url: "#eiseintra-defaultconf"
+          url: "#eiseintra_prop_defaultconf"
 
         - title: "$arrKeyboard"
-          url: "#eiseintra-arrkeyboard"
+          url: "#eiseintra_prop_arrkeyboard"
 
       - title: "public methods:"
         folders:
 
         - title: "__construct()"
-          url: "#eiseintra-__construct"
+          url: "#eiseintra_fn___construct"
 
         - title: "decodeAuthString()"
-          url: "#eiseintra-decodeauthstring"
+          url: "#eiseintra_fn_decodeauthstring"
 
         - title: "encodeAuthString()"
-          url: "#eiseintra-encodeauthstring"
+          url: "#eiseintra_fn_encodeauthstring"
 
         - title: "getEncryptionKey()"
-          url: "#eiseintra-getencryptionkey"
+          url: "#eiseintra_fn_getencryptionkey"
 
         - title: "encrypt()"
-          url: "#eiseintra-encrypt"
+          url: "#eiseintra_fn_encrypt"
 
         - title: "decrypt()"
-          url: "#eiseintra-decrypt"
+          url: "#eiseintra_fn_decrypt"
 
         - title: "password_hash()"
-          url: "#eiseintra-password_hash"
+          url: "#eiseintra_fn_password_hash"
 
         - title: "password_verify()"
-          url: "#eiseintra-password_verify"
+          url: "#eiseintra_fn_password_verify"
 
         - title: "Authenticate()"
-          url: "#eiseintra-authenticate"
+          url: "#eiseintra_fn_authenticate"
 
         - title: "session_initialize()"
-          url: "#eiseintra-session_initialize"
+          url: "#eiseintra_fn_session_initialize"
 
         - title: "logout()"
-          url: "#eiseintra-logout"
+          url: "#eiseintra_fn_logout"
 
         - title: "getUserRoles()"
-          url: "#eiseintra-getuserroles"
+          url: "#eiseintra_fn_getuserroles"
 
         - title: "checkPermissions()"
-          url: "#eiseintra-checkpermissions"
+          url: "#eiseintra_fn_checkpermissions"
 
         - title: "topLevelMenu()"
-          url: "#eiseintra-toplevelmenu"
+          url: "#eiseintra_fn_toplevelmenu"
 
         - title: "menu()"
-          url: "#eiseintra-menu"
+          url: "#eiseintra_fn_menu"
 
         - title: "menuItem()"
-          url: "#eiseintra-menuitem"
+          url: "#eiseintra_fn_menuitem"
 
         - title: "actionMenu()"
-          url: "#eiseintra-actionmenu"
+          url: "#eiseintra_fn_actionmenu"
 
         - title: "requireComponent()"
-          url: "#eiseintra-requirecomponent"
+          url: "#eiseintra_fn_requirecomponent"
 
         - title: "redirect()"
-          url: "#eiseintra-redirect"
+          url: "#eiseintra_fn_redirect"
 
         - title: "backref()"
-          url: "#eiseintra-backref"
+          url: "#eiseintra_fn_backref"
 
         - title: "json()"
-          url: "#eiseintra-json"
+          url: "#eiseintra_fn_json"
 
         - title: "file()"
-          url: "#eiseintra-file"
+          url: "#eiseintra_fn_file"
 
         - title: "batchStart()"
-          url: "#eiseintra-batchstart"
+          url: "#eiseintra_fn_batchstart"
 
         - title: "batchEcho()"
-          url: "#eiseintra-batchecho"
+          url: "#eiseintra_fn_batchecho"
 
         - title: "setUserMessage()"
-          url: "#eiseintra-setusermessage"
+          url: "#eiseintra_fn_setusermessage"
 
         - title: "getUserMessage()"
-          url: "#eiseintra-getusermessage"
+          url: "#eiseintra_fn_getusermessage"
 
         - title: "getRoleUsers()"
-          url: "#eiseintra-getroleusers"
+          url: "#eiseintra_fn_getroleusers"
 
         - title: "checkLanguage()"
-          url: "#eiseintra-checklanguage"
+          url: "#eiseintra_fn_checklanguage"
 
         - title: "translate()"
-          url: "#eiseintra-translate"
+          url: "#eiseintra_fn_translate"
 
         - title: "addTranslationKey()"
-          url: "#eiseintra-addtranslationkey"
+          url: "#eiseintra_fn_addtranslationkey"
 
         - title: "readSettings()"
-          url: "#eiseintra-readsettings"
+          url: "#eiseintra_fn_readsettings"
 
         - title: "setting()"
-          url: "#eiseintra-setting"
+          url: "#eiseintra_fn_setting"
 
         - title: "field()"
-          url: "#eiseintra-field"
+          url: "#eiseintra_fn_field"
 
         - title: "fieldset()"
-          url: "#eiseintra-fieldset"
+          url: "#eiseintra_fn_fieldset"
 
         - title: "form()"
-          url: "#eiseintra-form"
+          url: "#eiseintra_fn_form"
 
         - title: "showTextBox()"
-          url: "#eiseintra-showtextbox"
+          url: "#eiseintra_fn_showtextbox"
 
         - title: "showTextArea()"
-          url: "#eiseintra-showtextarea"
+          url: "#eiseintra_fn_showtextarea"
 
         - title: "showButton()"
-          url: "#eiseintra-showbutton"
+          url: "#eiseintra_fn_showbutton"
 
         - title: "showCombo()"
-          url: "#eiseintra-showcombo"
+          url: "#eiseintra_fn_showcombo"
 
         - title: "showCheckBox()"
-          url: "#eiseintra-showcheckbox"
+          url: "#eiseintra_fn_showcheckbox"
 
         - title: "showRadio()"
-          url: "#eiseintra-showradio"
+          url: "#eiseintra_fn_showradio"
 
         - title: "showRadioByArray()"
-          url: "#eiseintra-showradiobyarray"
+          url: "#eiseintra_fn_showradiobyarray"
 
         - title: "showAjaxDropdown()"
-          url: "#eiseintra-showajaxdropdown"
+          url: "#eiseintra_fn_showajaxdropdown"
 
         - title: "isEditable()"
-          url: "#eiseintra-iseditable"
+          url: "#eiseintra_fn_iseditable"
 
         - title: "loadJS()"
-          url: "#eiseintra-loadjs"
+          url: "#eiseintra_fn_loadjs"
 
         - title: "loadCSS()"
-          url: "#eiseintra-loadcss"
+          url: "#eiseintra_fn_loadcss"
 
         - title: "dataAction()"
-          url: "#eiseintra-dataaction"
+          url: "#eiseintra_fn_dataaction"
 
         - title: "dataRead()"
-          url: "#eiseintra-dataread"
+          url: "#eiseintra_fn_dataread"
 
         - title: "getDateTimeByOperationTime()"
-          url: "#eiseintra-getdatetimebyoperationtime"
+          url: "#eiseintra_fn_getdatetimebyoperationtime"
 
         - title: "showDatesPeriod()"
-          url: "#eiseintra-showdatesperiod"
+          url: "#eiseintra_fn_showdatesperiod"
 
       - title: "static methods:"
         folders:
 
         - title: "confVariations()"
-          url: "#eiseintra-confvariations"
+          url: "#eiseintra_fn_confvariations"
 
         - title: "getFullHREF()"
-          url: "#eiseintra-getfullhref"
+          url: "#eiseintra_fn_getfullhref"
 
         - title: "getKeyboardVariations()"
-          url: "#eiseintra-getkeyboardvariations"
+          url: "#eiseintra_fn_getkeyboardvariations"
 
         - title: "debug()"
-          url: "#eiseintra-debug"
+          url: "#eiseintra_fn_debug"
 
       - title: "protected methods:"
         folders:
 
         - title: "buildLess()"
-          url: "#eiseintra-buildless"
+          url: "#eiseintra_fn_buildless"
 
 
 
 
     - title: "class eiseIntraData:"
-      url: "#eiseintradata"
+      url: "#cls_eiseintradata"
       folders:
 
       - title: "static properties:"
         folders:
 
         - title: "$arrIntraDataTypes"
-          url: "#eiseintradata-arrintradatatypes"
+          url: "#eiseintradata_prop_arrintradatatypes"
 
       - title: "public methods:"
         folders:
 
         - title: "formatByType2PHP()"
-          url: "#eiseintradata-formatbytype2php"
+          url: "#eiseintradata_fn_formatbytype2php"
 
         - title: "formatByType2SQL()"
-          url: "#eiseintradata-formatbytype2sql"
+          url: "#eiseintradata_fn_formatbytype2sql"
 
         - title: "result2JSON()"
-          url: "#eiseintradata-result2json"
+          url: "#eiseintradata_fn_result2json"
 
         - title: "unq()"
-          url: "#eiseintradata-unq"
+          url: "#eiseintradata_fn_unq"
 
         - title: "decPHP2SQL()"
-          url: "#eiseintradata-decphp2sql"
+          url: "#eiseintradata_fn_decphp2sql"
 
         - title: "decSQL2PHP()"
-          url: "#eiseintradata-decsql2php"
+          url: "#eiseintradata_fn_decsql2php"
 
         - title: "dateSQL2PHP()"
-          url: "#eiseintradata-datesql2php"
+          url: "#eiseintradata_fn_datesql2php"
 
         - title: "datetimeSQL2PHP()"
-          url: "#eiseintradata-datetimesql2php"
+          url: "#eiseintradata_fn_datetimesql2php"
 
         - title: "datePHP2SQL()"
-          url: "#eiseintradata-datephp2sql"
+          url: "#eiseintradata_fn_datephp2sql"
 
         - title: "datetimePHP2SQL()"
-          url: "#eiseintradata-datetimephp2sql"
+          url: "#eiseintradata_fn_datetimephp2sql"
 
         - title: "getTableInfo()"
-          url: "#eiseintradata-gettableinfo"
+          url: "#eiseintradata_fn_gettableinfo"
 
         - title: "getSQLValue()"
-          url: "#eiseintradata-getsqlvalue"
+          url: "#eiseintradata_fn_getsqlvalue"
 
         - title: "getMultiPKCondition()"
-          url: "#eiseintradata-getmultipkcondition"
+          url: "#eiseintradata_fn_getmultipkcondition"
 
         - title: "getDataFromCommonViews()"
-          url: "#eiseintradata-getdatafromcommonviews"
+          url: "#eiseintradata_fn_getdatafromcommonviews"
 
         - title: "arrPHP2SQL()"
-          url: "#eiseintradata-arrphp2sql"
+          url: "#eiseintradata_fn_arrphp2sql"
 
         - title: "arrSQL2PHP()"
-          url: "#eiseintradata-arrsql2php"
+          url: "#eiseintradata_fn_arrsql2php"
 
         - title: "getSQLFields()"
-          url: "#eiseintradata-getsqlfields"
+          url: "#eiseintradata_fn_getsqlfields"
 
       - title: "static methods:"
         folders:
 
         - title: "getBasicDataType()"
-          url: "#eiseintradata-getbasicdatatype"
+          url: "#eiseintradata_fn_getbasicdatatype"
 
         - title: "getIntraDataType()"
-          url: "#eiseintradata-getintradatatype"
+          url: "#eiseintradata_fn_getintradatatype"
 
         - title: "getDecimalPlaces()"
-          url: "#eiseintradata-getdecimalplaces"
+          url: "#eiseintradata_fn_getdecimalplaces"
 
 
 
 
     - title: "class eiseSQL:"
-      url: "#eisesql"
+      url: "#cls_eisesql"
       folders:
 
       - title: "public properties:"
         folders:
 
         - title: "$arrIntra2DBTypeMap"
-          url: "#eisesql-arrintra2dbtypemap"
+          url: "#eisesql_prop_arrintra2dbtypemap"
 
         - title: "$arrDBTypeMap"
-          url: "#eisesql-arrdbtypemap"
+          url: "#eisesql_prop_arrdbtypemap"
 
       - title: "public methods:"
         folders:
 
         - title: "__construct()"
-          url: "#eisesql-__construct"
+          url: "#eisesql_fn___construct"
 
         - title: "connect()"
-          url: "#eisesql-connect"
+          url: "#eisesql_fn_connect"
 
         - title: "selectDB()"
-          url: "#eisesql-selectdb"
+          url: "#eisesql_fn_selectdb"
 
         - title: "e()"
-          url: "#eisesql-e"
+          url: "#eisesql_fn_e"
 
         - title: "unq()"
-          url: "#eisesql-unq"
+          url: "#eisesql_fn_unq"
 
         - title: "secure()"
-          url: "#eisesql-secure"
+          url: "#eisesql_fn_secure"
 
         - title: "q()"
-          url: "#eisesql-q"
+          url: "#eisesql_fn_q"
 
         - title: "n()"
-          url: "#eisesql-n"
+          url: "#eisesql_fn_n"
 
         - title: "f()"
-          url: "#eisesql-f"
+          url: "#eisesql_fn_f"
 
         - title: "fa()"
-          url: "#eisesql-fa"
+          url: "#eisesql_fn_fa"
 
         - title: "ff()"
-          url: "#eisesql-ff"
+          url: "#eisesql_fn_ff"
 
         - title: "i()"
-          url: "#eisesql-i"
+          url: "#eisesql_fn_i"
 
         - title: "a()"
-          url: "#eisesql-a"
+          url: "#eisesql_fn_a"
 
         - title: "d()"
-          url: "#eisesql-d"
+          url: "#eisesql_fn_d"
 
         - title: "startProfiling()"
-          url: "#eisesql-startprofiling"
+          url: "#eisesql_fn_startprofiling"
 
         - title: "showProfileInfo()"
-          url: "#eisesql-showprofileinfo"
+          url: "#eisesql_fn_showprofileinfo"
 
         - title: "getProfileInfo()"
-          url: "#eisesql-getprofileinfo"
+          url: "#eisesql_fn_getprofileinfo"
 
         - title: "getTableInfo()"
-          url: "#eisesql-gettableinfo"
+          url: "#eisesql_fn_gettableinfo"
 
 
 
 
 sidebar_right:
-  title: By category
-  class: rsd-navbar-right
-  id: "rsd_navbar_right"
+  title: "By category"
+  class: "rsd-navbar-right"
+  id: "rsd-navbar_right"
   folders:
     - title: "Authentication"
       folders:
 
       - title: "eiseIntra::__construct()"
-        url: "#eiseintra-__construct"
+        url: "#eiseintra_fn___construct"
         folders:
 
       - title: "eiseIntra::$arrUsrData"
-        url: "#eiseintra-arrusrdata"
+        url: "#eiseintra_prop_arrusrdata"
         folders:
 
       - title: "eiseIntra::Authenticate()"
-        url: "#eiseintra-authenticate"
+        url: "#eiseintra_fn_authenticate"
         folders:
 
       - title: "eiseIntra::checkPermissions()"
-        url: "#eiseintra-checkpermissions"
+        url: "#eiseintra_fn_checkpermissions"
         folders:
 
       - title: "eiseIntra::decodeAuthString()"
-        url: "#eiseintra-decodeauthstring"
+        url: "#eiseintra_fn_decodeauthstring"
         folders:
 
       - title: "eiseIntra::decrypt()"
-        url: "#eiseintra-decrypt"
+        url: "#eiseintra_fn_decrypt"
         folders:
 
       - title: "eiseIntra::encodeAuthString()"
-        url: "#eiseintra-encodeauthstring"
+        url: "#eiseintra_fn_encodeauthstring"
         folders:
 
       - title: "eiseIntra::encrypt()"
-        url: "#eiseintra-encrypt"
+        url: "#eiseintra_fn_encrypt"
         folders:
 
       - title: "eiseIntra::getRoleUsers()"
-        url: "#eiseintra-getroleusers"
+        url: "#eiseintra_fn_getroleusers"
         folders:
 
       - title: "eiseIntra::getUserRoles()"
-        url: "#eiseintra-getuserroles"
+        url: "#eiseintra_fn_getuserroles"
         folders:
 
       - title: "eiseIntra::logout()"
-        url: "#eiseintra-logout"
+        url: "#eiseintra_fn_logout"
         folders:
 
       - title: "eiseIntra::password_hash()"
-        url: "#eiseintra-password_hash"
+        url: "#eiseintra_fn_password_hash"
         folders:
 
       - title: "eiseIntra::password_verify()"
-        url: "#eiseintra-password_verify"
+        url: "#eiseintra_fn_password_verify"
         folders:
 
       - title: "eiseIntra::session_initialize()"
-        url: "#eiseintra-session_initialize"
+        url: "#eiseintra_fn_session_initialize"
         folders:
 
       - title: "eiseIntra::$usrID"
-        url: "#eiseintra-usrid"
+        url: "#eiseintra_prop_usrid"
         folders:
 
     - title: "Authorization"
       folders:
 
       - title: "eiseIntra::checkPermissions()"
-        url: "#eiseintra-checkpermissions"
+        url: "#eiseintra_fn_checkpermissions"
         folders:
 
       - title: "eiseIntra::getRoleUsers()"
-        url: "#eiseintra-getroleusers"
+        url: "#eiseintra_fn_getroleusers"
         folders:
 
       - title: "eiseIntra::getUserRoles()"
-        url: "#eiseintra-getuserroles"
+        url: "#eiseintra_fn_getuserroles"
         folders:
 
     - title: "Batch run"
       folders:
 
       - title: "eiseIntra::batchEcho()"
-        url: "#eiseintra-batchecho"
+        url: "#eiseintra_fn_batchecho"
         folders:
 
       - title: "eiseIntra::batchStart()"
-        url: "#eiseintra-batchstart"
+        url: "#eiseintra_fn_batchstart"
         folders:
 
     - title: "Configuration"
       folders:
 
       - title: "eiseIntra::__construct()"
-        url: "#eiseintra-__construct"
+        url: "#eiseintra_fn___construct"
         folders:
 
       - title: "eiseIntra::$conf"
-        url: "#eiseintra-conf"
+        url: "#eiseintra_prop_conf"
         folders:
 
       - title: "eiseIntra::$defaultConf"
-        url: "#eiseintra-defaultconf"
+        url: "#eiseintra_prop_defaultconf"
         folders:
 
       - title: "eiseIntra::readSettings()"
-        url: "#eiseintra-readsettings"
+        url: "#eiseintra_fn_readsettings"
         folders:
 
       - title: "eiseIntra::requireComponent()"
-        url: "#eiseintra-requirecomponent"
+        url: "#eiseintra_fn_requirecomponent"
         folders:
 
     - title: "Data formatting"
       folders:
 
       - title: "eiseIntraData::datePHP2SQL()"
-        url: "#eiseintradata-datephp2sql"
+        url: "#eiseintradata_fn_datephp2sql"
         folders:
 
       - title: "eiseIntraData::dateSQL2PHP()"
-        url: "#eiseintradata-datesql2php"
+        url: "#eiseintradata_fn_datesql2php"
         folders:
 
       - title: "eiseIntraData::datetimePHP2SQL()"
-        url: "#eiseintradata-datetimephp2sql"
+        url: "#eiseintradata_fn_datetimephp2sql"
         folders:
 
       - title: "eiseIntraData::datetimeSQL2PHP()"
-        url: "#eiseintradata-datetimesql2php"
+        url: "#eiseintradata_fn_datetimesql2php"
         folders:
 
       - title: "eiseIntraData::decPHP2SQL()"
-        url: "#eiseintradata-decphp2sql"
+        url: "#eiseintradata_fn_decphp2sql"
         folders:
 
       - title: "eiseIntraData::decSQL2PHP()"
-        url: "#eiseintradata-decsql2php"
+        url: "#eiseintradata_fn_decsql2php"
         folders:
 
       - title: "eiseIntraData::formatByType2PHP()"
-        url: "#eiseintradata-formatbytype2php"
+        url: "#eiseintradata_fn_formatbytype2php"
         folders:
 
       - title: "eiseIntraData::formatByType2SQL()"
-        url: "#eiseintradata-formatbytype2sql"
+        url: "#eiseintradata_fn_formatbytype2sql"
         folders:
 
       - title: "eiseIntraData::getDecimalPlaces()"
-        url: "#eiseintradata-getdecimalplaces"
+        url: "#eiseintradata_fn_getdecimalplaces"
         folders:
 
       - title: "eiseIntraData::getSQLValue()"
-        url: "#eiseintradata-getsqlvalue"
+        url: "#eiseintradata_fn_getsqlvalue"
         folders:
 
       - title: "eiseIntraData::unq()"
-        url: "#eiseintradata-unq"
+        url: "#eiseintradata_fn_unq"
         folders:
 
       - title: "eiseSQL::e()"
-        url: "#eisesql-e"
+        url: "#eisesql_fn_e"
         folders:
 
       - title: "eiseSQL::secure()"
-        url: "#eisesql-secure"
+        url: "#eisesql_fn_secure"
         folders:
 
     - title: "Data Handling"
       folders:
 
       - title: "eiseIntra::$arrKeyboard"
-        url: "#eiseintra-arrkeyboard"
+        url: "#eiseintra_prop_arrkeyboard"
         folders:
 
       - title: "eiseIntra::dataAction()"
-        url: "#eiseintra-dataaction"
+        url: "#eiseintra_fn_dataaction"
         folders:
 
       - title: "eiseIntra::dataRead()"
-        url: "#eiseintra-dataread"
+        url: "#eiseintra_fn_dataread"
         folders:
 
     - title: "Data Output"
       folders:
 
       - title: "eiseIntraData::result2JSON()"
-        url: "#eiseintradata-result2json"
+        url: "#eiseintradata_fn_result2json"
         folders:
 
       - title: "eiseIntra::file()"
-        url: "#eiseintra-file"
+        url: "#eiseintra_fn_file"
         folders:
 
       - title: "eiseIntra::getDateTimeByOperationTime()"
-        url: "#eiseintra-getdatetimebyoperationtime"
+        url: "#eiseintra_fn_getdatetimebyoperationtime"
         folders:
 
       - title: "eiseIntra::json()"
-        url: "#eiseintra-json"
+        url: "#eiseintra_fn_json"
         folders:
 
       - title: "eiseIntra::loadCSS()"
-        url: "#eiseintra-loadcss"
+        url: "#eiseintra_fn_loadcss"
         folders:
 
       - title: "eiseIntra::loadJS()"
-        url: "#eiseintra-loadjs"
+        url: "#eiseintra_fn_loadjs"
         folders:
 
       - title: "eiseIntra::showDatesPeriod()"
-        url: "#eiseintra-showdatesperiod"
+        url: "#eiseintra_fn_showdatesperiod"
         folders:
 
     - title: "Database routines"
       folders:
 
       - title: "eiseIntraData::getDataFromCommonViews()"
-        url: "#eiseintradata-getdatafromcommonviews"
+        url: "#eiseintradata_fn_getdatafromcommonviews"
         folders:
 
       - title: "eiseIntraData::getMultiPKCondition()"
-        url: "#eiseintradata-getmultipkcondition"
+        url: "#eiseintradata_fn_getmultipkcondition"
         folders:
 
       - title: "eiseSQL::__construct()"
-        url: "#eisesql-__construct"
+        url: "#eisesql_fn___construct"
         folders:
 
       - title: "eiseSQL::a()"
-        url: "#eisesql-a"
+        url: "#eisesql_fn_a"
         folders:
 
       - title: "eiseSQL::d()"
-        url: "#eisesql-d"
+        url: "#eisesql_fn_d"
         folders:
 
       - title: "eiseSQL::e()"
-        url: "#eisesql-e"
+        url: "#eisesql_fn_e"
         folders:
 
       - title: "eiseSQL::f()"
-        url: "#eisesql-f"
+        url: "#eisesql_fn_f"
         folders:
 
       - title: "eiseSQL::fa()"
-        url: "#eisesql-fa"
+        url: "#eisesql_fn_fa"
         folders:
 
       - title: "eiseSQL::ff()"
-        url: "#eisesql-ff"
+        url: "#eisesql_fn_ff"
         folders:
 
       - title: "eiseSQL::getTableInfo()"
-        url: "#eisesql-gettableinfo"
+        url: "#eisesql_fn_gettableinfo"
         folders:
 
       - title: "eiseSQL::i()"
-        url: "#eisesql-i"
+        url: "#eisesql_fn_i"
         folders:
 
       - title: "eiseSQL::n()"
-        url: "#eisesql-n"
+        url: "#eisesql_fn_n"
         folders:
 
       - title: "eiseSQL::q()"
-        url: "#eisesql-q"
+        url: "#eisesql_fn_q"
         folders:
 
       - title: "eiseSQL::secure()"
-        url: "#eisesql-secure"
+        url: "#eisesql_fn_secure"
         folders:
 
     - title: "Debug"
       folders:
 
       - title: "eiseIntra::debug()"
-        url: "#eiseintra-debug"
+        url: "#eiseintra_fn_debug"
         folders:
 
       - title: "eiseSQL::getProfileInfo()"
-        url: "#eisesql-getprofileinfo"
+        url: "#eisesql_fn_getprofileinfo"
         folders:
 
       - title: "eiseSQL::showProfileInfo()"
-        url: "#eisesql-showprofileinfo"
+        url: "#eisesql_fn_showprofileinfo"
         folders:
 
       - title: "eiseSQL::startProfiling()"
-        url: "#eisesql-startprofiling"
+        url: "#eisesql_fn_startprofiling"
         folders:
 
     - title: "Forms"
       folders:
 
       - title: "eiseIntra::field()"
-        url: "#eiseintra-field"
+        url: "#eiseintra_fn_field"
         folders:
 
       - title: "eiseIntra::fieldset()"
-        url: "#eiseintra-fieldset"
+        url: "#eiseintra_fn_fieldset"
         folders:
 
       - title: "eiseIntra::form()"
-        url: "#eiseintra-form"
+        url: "#eiseintra_fn_form"
         folders:
 
       - title: "eiseIntra::isEditable()"
-        url: "#eiseintra-iseditable"
+        url: "#eiseintra_fn_iseditable"
         folders:
 
       - title: "eiseIntra::showAjaxDropdown()"
-        url: "#eiseintra-showajaxdropdown"
+        url: "#eiseintra_fn_showajaxdropdown"
         folders:
 
       - title: "eiseIntra::showButton()"
-        url: "#eiseintra-showbutton"
+        url: "#eiseintra_fn_showbutton"
         folders:
 
       - title: "eiseIntra::showCheckBox()"
-        url: "#eiseintra-showcheckbox"
+        url: "#eiseintra_fn_showcheckbox"
         folders:
 
       - title: "eiseIntra::showCombo()"
-        url: "#eiseintra-showcombo"
+        url: "#eiseintra_fn_showcombo"
         folders:
 
       - title: "eiseIntra::showRadio()"
-        url: "#eiseintra-showradio"
+        url: "#eiseintra_fn_showradio"
         folders:
 
       - title: "eiseIntra::showRadioByArray()"
-        url: "#eiseintra-showradiobyarray"
+        url: "#eiseintra_fn_showradiobyarray"
         folders:
 
       - title: "eiseIntra::showTextArea()"
-        url: "#eiseintra-showtextarea"
+        url: "#eiseintra_fn_showtextarea"
         folders:
 
       - title: "eiseIntra::showTextBox()"
-        url: "#eiseintra-showtextbox"
+        url: "#eiseintra_fn_showtextbox"
         folders:
 
     - title: "i18n"
       folders:
 
       - title: "eiseIntra::addTranslationKey()"
-        url: "#eiseintra-addtranslationkey"
+        url: "#eiseintra_fn_addtranslationkey"
         folders:
 
       - title: "eiseIntra::$arrKeyboard"
-        url: "#eiseintra-arrkeyboard"
+        url: "#eiseintra_prop_arrkeyboard"
         folders:
 
       - title: "eiseIntra::checkLanguage()"
-        url: "#eiseintra-checklanguage"
+        url: "#eiseintra_fn_checklanguage"
         folders:
 
       - title: "eiseIntra::getKeyboardVariations()"
-        url: "#eiseintra-getkeyboardvariations"
+        url: "#eiseintra_fn_getkeyboardvariations"
         folders:
 
       - title: "eiseIntra::$local"
-        url: "#eiseintra-local"
+        url: "#eiseintra_prop_local"
         folders:
 
       - title: "eiseIntra::translate()"
-        url: "#eiseintra-translate"
+        url: "#eiseintra_fn_translate"
         folders:
 
     - title: "Navigation"
       folders:
 
       - title: "eiseIntra::actionMenu()"
-        url: "#eiseintra-actionmenu"
+        url: "#eiseintra_fn_actionmenu"
         folders:
 
       - title: "eiseIntra::backref()"
-        url: "#eiseintra-backref"
+        url: "#eiseintra_fn_backref"
         folders:
 
       - title: "eiseIntra::dataAction()"
-        url: "#eiseintra-dataaction"
+        url: "#eiseintra_fn_dataaction"
         folders:
 
       - title: "eiseIntra::menu()"
-        url: "#eiseintra-menu"
+        url: "#eiseintra_fn_menu"
         folders:
 
       - title: "eiseIntra::menuItem()"
-        url: "#eiseintra-menuitem"
+        url: "#eiseintra_fn_menuitem"
         folders:
 
       - title: "eiseIntra::redirect()"
-        url: "#eiseintra-redirect"
+        url: "#eiseintra_fn_redirect"
         folders:
 
       - title: "eiseIntra::topLevelMenu()"
-        url: "#eiseintra-toplevelmenu"
+        url: "#eiseintra_fn_toplevelmenu"
         folders:
 
     - title: "Useful stuff"
       folders:
 
       - title: "eiseIntra::getKeyboardVariations()"
-        url: "#eiseintra-getkeyboardvariations"
+        url: "#eiseintra_fn_getkeyboardvariations"
         folders:
 
     - title: "Utilities"
       folders:
 
       - title: "eiseIntra::buildLess()"
-        url: "#eiseintra-buildless"
+        url: "#eiseintra_fn_buildless"
         folders:
 
       - title: "eiseIntra::confVariations()"
-        url: "#eiseintra-confvariations"
+        url: "#eiseintra_fn_confvariations"
         folders:
 
 ---
@@ -793,19 +793,19 @@ eiseIntra core
 
 Authentication, form elements display, data handling routines
 
-__Package__: eiseIntra  
 __Version__: 2.3  
+__Package__: eiseIntra  
 
 
 
 
-## <a name="eiseintra"></a>class __eiseIntra__
+## <a name="cls_eiseintra"></a>class __eiseIntra__
 
 eiseIntra is the core class that encapsulates routines for authenication, form elements display, data handling, redirection and debug.
 
 This class extends eiseIntraData as base class.
 
-### <a name="eiseintra-arrusrdata"></a>public property __$arrUsrData__
+### <a name="eiseintra_prop_arrusrdata"></a>public property __$arrUsrData__
 
 Array with data of currently logged user:  
 - all user data from stbl_user table:
@@ -844,7 +844,7 @@ __Category__: Authentication
 
 
 
-### <a name="eiseintra-usrid"></a>public property __$usrID__
+### <a name="eiseintra_prop_usrid"></a>public property __$usrID__
 
 ID of current user.
 
@@ -852,7 +852,7 @@ __Category__: Authentication
 
 
 
-### <a name="eiseintra-conf"></a>public property __$conf__
+### <a name="eiseintra_prop_conf"></a>public property __$conf__
 
 Configuration array. See description at [eiseIntra::$defaultConf](#eiseintra-deafultconf)
 
@@ -860,7 +860,7 @@ __Category__: Configuration
 
 
 
-### <a name="eiseintra-local"></a>public property __$local__
+### <a name="eiseintra_prop_local"></a>public property __$local__
 
 This property is set to 'Local' when local language is selected by the user
 
@@ -868,7 +868,7 @@ __Category__: i18n
 
 
 
-### <a name="eiseintra-defaultconf"></a>static property __$defaultConf__
+### <a name="eiseintra_prop_defaultconf"></a>static property __$defaultConf__
 
 Default configuration. Exact configuration parameters list is:
 
@@ -930,7 +930,7 @@ __Category__: Configuration
 
 
 
-### <a name="eiseintra-arrkeyboard"></a>static property __$arrKeyboard__
+### <a name="eiseintra_prop_arrkeyboard"></a>static property __$arrKeyboard__
 
 Array with keyboard layouts.
 Key is layout code, value is string with characters in the order of keyboard keys.
@@ -947,7 +947,7 @@ i18n
 
 
 
-### <a name="eiseintra-__construct"></a>public function ____construct()__
+### <a name="eiseintra_fn___construct"></a>public function ____construct()__
 
 Constructor receives eiseSQL object with database connection as input parameter and performs object initialization with configuration options supplied in $conf array.
 
@@ -961,7 +961,7 @@ Configuration
 
 
 
-### <a name="eiseintra-decodeauthstring"></a>public function __decodeAuthString()__
+### <a name="eiseintra_fn_decodeauthstring"></a>public function __decodeAuthString()__
 
 Function decodes authstring login:password
 using decrypt() method
@@ -976,7 +976,7 @@ __Category__: Authentication
 
 
 
-### <a name="eiseintra-encodeauthstring"></a>public function __encodeAuthString($login, $password)__
+### <a name="eiseintra_fn_encodeauthstring"></a>public function __encodeAuthString($login, $password)__
 
 Function encodes authstring login:password
 using encrypt() method.
@@ -992,7 +992,7 @@ __Category__: Authentication
 
 
 
-### <a name="eiseintra-getencryptionkey"></a>public function __getEncryptionKey()__
+### <a name="eiseintra_fn_getencryptionkey"></a>public function __getEncryptionKey()__
 
 This function returns combination of global variable $eiseIntraKey  
 stored at eiseIntra's inc_config.php and server variable EISINTRA_KEY that can be set in Nginx or Apache config.
@@ -1006,7 +1006,7 @@ __Returns__: string Key or false, if both key parts are empty.
 
 
 
-### <a name="eiseintra-encrypt"></a>public function __encrypt($encrypt)__
+### <a name="eiseintra_fn_encrypt"></a>public function __encrypt($encrypt)__
 
 Function encrypts a string with symmetric encryption 
 using the key obtained from getEncryptionKey() method and current encoding algorithm 
@@ -1022,7 +1022,7 @@ __Category__: Authentication
 
 
 
-### <a name="eiseintra-decrypt"></a>public function __decrypt($decrypt)__
+### <a name="eiseintra_fn_decrypt"></a>public function __decrypt($decrypt)__
 
 Function decrypts a string with symmetric decryption 
 using the key obtained from getEncryptionKey() method and current encoding algorithm 
@@ -1038,7 +1038,7 @@ __Category__: Authentication
 
 
 
-### <a name="eiseintra-password_hash"></a>public function __password_hash($pass)__
+### <a name="eiseintra_fn_password_hash"></a>public function __password_hash($pass)__
 
 This function returns password hash according to hashing method specified in $conf['pass_hash'].
 
@@ -1052,7 +1052,7 @@ __Category__: Authentication
 
 
 
-### <a name="eiseintra-password_verify"></a>public function __password_verify($pass, $hash)__
+### <a name="eiseintra_fn_password_verify"></a>public function __password_verify($pass, $hash)__
 
 This function verifies the password across the hash according to hashing method specified in $conf['pass_hash'].
 
@@ -1067,7 +1067,7 @@ __Category__: Authentication
 
 
 
-### <a name="eiseintra-authenticate"></a>public function __Authenticate()__
+### <a name="eiseintra_fn_authenticate"></a>public function __Authenticate()__
 
 Function that checks authentication with credentials database using selected $method.
 Now it supports the following methods:
@@ -1095,7 +1095,7 @@ __Category__: Authentication
 
 
 
-### <a name="eiseintra-session_initialize"></a>public function __session_initialize()__
+### <a name="eiseintra_fn_session_initialize"></a>public function __session_initialize()__
 
 This function intialize session with session cookes placed at path set by $this->conf['cookiePath'] configuration variable.
 
@@ -1103,7 +1103,7 @@ __Category__: Authentication
 
 
 
-### <a name="eiseintra-logout"></a>public function __logout()__
+### <a name="eiseintra_fn_logout"></a>public function __logout()__
 
 This function quits user session.
 
@@ -1111,7 +1111,7 @@ __Category__: Authentication
 
 
 
-### <a name="eiseintra-getuserroles"></a>public function __getUserRoles($usrID = null)__
+### <a name="eiseintra_fn_getuserroles"></a>public function __getUserRoles($usrID = null)__
 
 This function fills in $arrUsrData['roles'] and $arrUsrData['roleIDs'] arrays. Can be overriden for virtual roles.
 
@@ -1132,7 +1132,7 @@ Authorization
 
 
 
-### <a name="eiseintra-checkpermissions"></a>public function __checkPermissions( )__
+### <a name="eiseintra_fn_checkpermissions"></a>public function __checkPermissions( )__
 
 This function checks current user's permissions on currently open script.
 Also it checks session expiration time, and condition when user is blocked or not in the database.
@@ -1157,7 +1157,7 @@ Authorization
 
 
 
-### <a name="eiseintra-toplevelmenu"></a>public function __topLevelMenu()__
+### <a name="eiseintra_fn_toplevelmenu"></a>public function __topLevelMenu()__
 
 This method returns content of top-level "jumper" menu as drop-down list. "Jumper" menu content goes with an associative array passed as parameter to this function.
 
@@ -1170,7 +1170,7 @@ __Category__: Navigation
 
 
 
-### <a name="eiseintra-menu"></a>public function __menu($target = null)__
+### <a name="eiseintra_fn_menu"></a>public function __menu($target = null)__
 
 This method returns system menu `<ul>` HTML for menu structure.
 
@@ -1184,7 +1184,7 @@ __Category__: Navigation
 
 
 
-### <a name="eiseintra-menuitem"></a>public function __menuItem($rw)__
+### <a name="eiseintra_fn_menuitem"></a>public function __menuItem($rw)__
 
 This method is called __before__ each menu item <li> closure. 
 You can add custom menu items/submenus in your own app overriding this method in the inherited class.
@@ -1199,7 +1199,7 @@ __Category__: Navigation
 
 
 
-### <a name="eiseintra-actionmenu"></a>public function __actionMenu()__
+### <a name="eiseintra_fn_actionmenu"></a>public function __actionMenu()__
 
 This method returns HTML for "action menu" - the menu that displayed above the functional part of the screen. Menu content is set by __$arrActions__ parameter, the set of associative arrays with menu items.
 Menu item definition array consists of the following properties:
@@ -1222,7 +1222,7 @@ __Category__: Navigation
 
 
 
-### <a name="eiseintra-requirecomponent"></a>public function __requireComponent($components)__
+### <a name="eiseintra_fn_requirecomponent"></a>public function __requireComponent($components)__
 
 This method includes specified $components into your PHP code by calling corresponding include() PHP functions and filling out __$arrJS__ and __$arrCSS__ arrays.
 
@@ -1239,7 +1239,7 @@ __Category__: Configuration
 
 
 
-### <a name="eiseintra-redirect"></a>public function __redirect()__
+### <a name="eiseintra_fn_redirect"></a>public function __redirect()__
 
 This method adds HTTP header "Location" that redirects user to URL/URI specified in $strLocation, with text message to be shown on this page, specified in $strMessage parameter.  
 
@@ -1270,7 +1270,7 @@ __Category__: Navigation
 
 
 
-### <a name="eiseintra-backref"></a>public function __backref($urlIfNoReferer=null)__
+### <a name="eiseintra_fn_backref"></a>public function __backref($urlIfNoReferer=null)__
 
 This method returns proper 'Back' reference for this button in Action Menu. If $_SERVER['HTTP_REFERER'] doesn't contain current URI, it set a cookie with referring page.  
 
@@ -1293,7 +1293,7 @@ __Category__: Navigation
 
 
 
-### <a name="eiseintra-json"></a>public function __json($status, $message, $data=null)__
+### <a name="eiseintra_fn_json"></a>public function __json($status, $message, $data=null)__
 
 Function outputs JSON-encoded response basing on intra specification and terminates the script.
 
@@ -1307,7 +1307,7 @@ __Category__: Data Output
 
 
 
-### <a name="eiseintra-file"></a>public function __file($name, $type, $pathOrData)__
+### <a name="eiseintra_fn_file"></a>public function __file($name, $type, $pathOrData)__
 
 Function outputs binary stuff to the user.
 
@@ -1321,7 +1321,7 @@ __Category__: Data Output
 
 
 
-### <a name="eiseintra-batchstart"></a>public function __batchStart($conf = array())__
+### <a name="eiseintra_fn_batchstart"></a>public function __batchStart($conf = array())__
 
 This function outputs necessary stuff to start batch data operation script.
 WARNING: this function closes existing session using session_write_close(), so avoid changing $_SESSION variables in your batch processing script.
@@ -1334,7 +1334,7 @@ __Category__: Batch run
 
 
 
-### <a name="eiseintra-batchecho"></a>public function __batchEcho($string)__
+### <a name="eiseintra_fn_batchecho"></a>public function __batchEcho($string)__
 
 This function outputs data at batch data operation script, adds htmlspecialchars() and flushes output buffer.
 
@@ -1346,7 +1346,7 @@ __Category__: Batch run
 
 
 
-### <a name="eiseintra-setusermessage"></a>public function __setUserMessage($strMessage, $conf = array())__
+### <a name="eiseintra_fn_setusermessage"></a>public function __setUserMessage($strMessage, $conf = array())__
 
 This function sets user message to the cookie.
 
@@ -1357,7 +1357,7 @@ __Parameters__:
 
 
 
-### <a name="eiseintra-getusermessage"></a>public function __getUserMessage()__
+### <a name="eiseintra_fn_getusermessage"></a>public function __getUserMessage()__
 
 This function retrieves user message from the cookie and deletes the cookie itself.
 
@@ -1365,7 +1365,7 @@ __Returns__: string with user message
 
 
 
-### <a name="eiseintra-getroleusers"></a>public function __getRoleUsers($rolID)__
+### <a name="eiseintra_fn_getroleusers"></a>public function __getRoleUsers($rolID)__
 
 This method returns array of role users by role ID
 
@@ -1380,7 +1380,7 @@ Authorization
 
 
 
-### <a name="eiseintra-checklanguage"></a>public function __checkLanguage()__
+### <a name="eiseintra_fn_checklanguage"></a>public function __checkLanguage()__
 
 This function initialize what language to use: local or global
 
@@ -1388,7 +1388,7 @@ __Category__: i18n
 
 
 
-### <a name="eiseintra-translate"></a>public function __translate($key)__
+### <a name="eiseintra_fn_translate"></a>public function __translate($key)__
 
 An analog of industrial standard __() function, $intra->translate() translates simple words/phrases to local language according to the system dictionary oridinarily located in < sys dir >/common/lang.php and included at auth.php. Now it supports sprintf() formatting, so it can translate phrases with format strings like "Item #%s is updated."
 
@@ -1400,7 +1400,7 @@ __Category__: i18n
 
 
 
-### <a name="eiseintra-addtranslationkey"></a>public function __addTranslationKey($key)__
+### <a name="eiseintra_fn_addtranslationkey"></a>public function __addTranslationKey($key)__
 
 This is service method that turns on translation key collection for further dictionary fill in (lang.php)
 
@@ -1412,7 +1412,7 @@ __Category__: i18n
 
 
 
-### <a name="eiseintra-readsettings"></a>public function __readSettings()__
+### <a name="eiseintra_fn_readsettings"></a>public function __readSettings()__
 
 This function reads `stbl_setup` table into `$intra->conf[]` array.
 
@@ -1420,7 +1420,7 @@ __Category__: Configuration
 
 
 
-### <a name="eiseintra-setting"></a>public function __setting()__
+### <a name="eiseintra_fn_setting"></a>public function __setting()__
 
 This function is to read or write system variable values stored in stbl_setup.
 
@@ -1433,7 +1433,7 @@ __Returns__: variant if param $stpVarValue is omitted it returns current setting
 
 
 
-### <a name="eiseintra-field"></a>public function __field()__
+### <a name="eiseintra_fn_field"></a>public function __field()__
 
 This function returns HTML for single field
 If parameter $title is specified, it returns full HTML with container, label and input/text
@@ -1451,7 +1451,7 @@ __Category__: Forms
 
 
 
-### <a name="eiseintra-fieldset"></a>public function __fieldset()__
+### <a name="eiseintra_fn_fieldset"></a>public function __fieldset()__
 
 This function returns HTML for single fieldset
 
@@ -1469,7 +1469,7 @@ __Category__: Forms
 
 
 
-### <a name="eiseintra-form"></a>public function __form()__
+### <a name="eiseintra_fn_form"></a>public function __form()__
 
 This function returns HTML for the form.
 
@@ -1489,7 +1489,7 @@ __Category__: Forms
 
 
 
-### <a name="eiseintra-showtextbox"></a>public function __showTextBox()__
+### <a name="eiseintra_fn_showtextbox"></a>public function __showTextBox()__
 
 This function returns HTML for the text box `<input type="text">`.
 
@@ -1503,7 +1503,7 @@ __Category__: Forms
 
 
 
-### <a name="eiseintra-showtextarea"></a>public function __showTextArea()__
+### <a name="eiseintra_fn_showtextarea"></a>public function __showTextArea()__
 
 This function returns HTML for the `<textarea>`.
 
@@ -1517,7 +1517,7 @@ __Category__: Forms
 
 
 
-### <a name="eiseintra-showbutton"></a>public function __showButton($name, $value, $arrConfig=array())__
+### <a name="eiseintra_fn_showbutton"></a>public function __showButton($name, $value, $arrConfig=array())__
 
 showButton() method returns `<input type="submit">` or `<button>` HTML. Input type should be specified in `$arrConfig['type']` member.
 
@@ -1536,7 +1536,7 @@ __Category__: Forms
 
 
 
-### <a name="eiseintra-showcombo"></a>public function __showCombo()__
+### <a name="eiseintra_fn_showcombo"></a>public function __showCombo()__
 
 This method returns HTML for `<select>` form control.
 Element id and name are set with $strName parameter. Selected element will be chosen accorging to $strValue. Option values and this variable will be converted being casted to strings.
@@ -1567,7 +1567,7 @@ __Category__: Forms
 
 
 
-### <a name="eiseintra-showcheckbox"></a>public function __showCheckBox()__
+### <a name="eiseintra_fn_showcheckbox"></a>public function __showCheckBox()__
 
 This function returns HTML for the < input type="checkbox" >.
 
@@ -1581,7 +1581,7 @@ __Category__: Forms
 
 
 
-### <a name="eiseintra-showradio"></a>public function __showRadio()__
+### <a name="eiseintra_fn_showradio"></a>public function __showRadio()__
 
 This function returns HTML for the < input type="radio" >.
 
@@ -1595,7 +1595,7 @@ __Category__: Forms
 
 
 
-### <a name="eiseintra-showradiobyarray"></a>public function __showRadioByArray()__
+### <a name="eiseintra_fn_showradiobyarray"></a>public function __showRadioByArray()__
 
 This function returns HTML for the < input type="radio" >, basing on arrays
 
@@ -1609,7 +1609,7 @@ __Category__: Forms
 
 
 
-### <a name="eiseintra-showajaxdropdown"></a>public function __showAjaxDropdown()__
+### <a name="eiseintra_fn_showajaxdropdown"></a>public function __showAjaxDropdown()__
 
 This function returns HTML for the AJAX-based autocomplete inputs. They download data from the server while user inputs the text.
 
@@ -1623,7 +1623,7 @@ __Category__: Forms
 
 
 
-### <a name="eiseintra-iseditable"></a>public function __isEditable($flagToForce = null)__
+### <a name="eiseintra_fn_iseditable"></a>public function __isEditable($flagToForce = null)__
 
 This method returns True if user permissions allow to edit the data. It is possible either if FlagWrite is positive at current page or FlagCreate or FlagUpdate are too.
 Perissions may be forced to allow editing or deny it by setting $flagToForce parameter to True or Flase correspondingly. If it's not set or null it meaningless.
@@ -1638,7 +1638,7 @@ __Category__: Forms
 
 
 
-### <a name="eiseintra-loadjs"></a>public function __loadJS()__
+### <a name="eiseintra_fn_loadjs"></a>public function __loadJS()__
 
 Function that loads JavaScript files basing on GLOBAL $arrJS
 
@@ -1646,7 +1646,7 @@ __Category__: Data Output
 
 
 
-### <a name="eiseintra-loadcss"></a>public function __loadCSS()__
+### <a name="eiseintra_fn_loadcss"></a>public function __loadCSS()__
 
 Function that loads CSS files basing on GLOBAL $arrCSS
 
@@ -1654,7 +1654,7 @@ __Category__: Data Output
 
 
 
-### <a name="eiseintra-dataaction"></a>public function __dataAction($dataAction, $funcOrObj=null)__
+### <a name="eiseintra_fn_dataaction"></a>public function __dataAction($dataAction, $funcOrObj=null)__
 
 Data handling hook function. If $_GET or $_POST ['DataAction'] array member fits contents of $dataAction parameter that can be array or string, 
 user function $function_name will be called and contents of $_POST or $_GET will be passed as parameters.
@@ -1671,7 +1671,7 @@ Data Handling
 
 
 
-### <a name="eiseintra-dataread"></a>public function __dataRead()__
+### <a name="eiseintra_fn_dataread"></a>public function __dataRead()__
 
 Data read hook function. If $query['DataAction'] array member fits contents of $dataReadValues parameter that can be array or string, 
 user function $function_name will be called and contents of $query parameter will be passed. If $query parameter is omitted, function 
@@ -1689,7 +1689,7 @@ __Category__: Data Handling
 
 
 
-### <a name="eiseintra-getdatetimebyoperationtime"></a>public function __getDateTimeByOperationTime()__
+### <a name="eiseintra_fn_getdatetimebyoperationtime"></a>public function __getDateTimeByOperationTime()__
 
 This function returns date and time string basing on operation date and time string. 
 If operation day start time is greater than operation day end time, and time passed less than operation day end time,
@@ -1708,7 +1708,7 @@ __Category__: Data Output
 
 
 
-### <a name="eiseintra-showdatesperiod"></a>public function __showDatesPeriod()__
+### <a name="eiseintra_fn_showdatesperiod"></a>public function __showDatesPeriod()__
 
 This function returns date period string basing on start and end dates. 
 If both dates are equal, only one date will be returned.
@@ -1723,7 +1723,7 @@ __Category__: Data Output
 
 
 
-### <a name="eiseintra-confvariations"></a>static function __confVariations()__
+### <a name="eiseintra_fn_confvariations"></a>static function __confVariations()__
 
 Static functions that returns first occurence of configuration array $conf key variations passed as $variations parameter (array). Made for backward compatibility.
 
@@ -1738,7 +1738,7 @@ __Category__: Utilities
 
 
 
-### <a name="eiseintra-getfullhref"></a>static function __getFullHREF($iframeHREF)__
+### <a name="eiseintra_fn_getfullhref"></a>static function __getFullHREF($iframeHREF)__
 
 This function returns external reference to the script inside `<iframe>`. This href will load all iframe surrounding, including menu and $iframeHREF will be inside this `<iframe>`
 
@@ -1748,7 +1748,7 @@ __Parameters__:
 
 
 
-### <a name="eiseintra-getkeyboardvariations"></a>static function __getKeyboardVariations($src)__
+### <a name="eiseintra_fn_getkeyboardvariations"></a>static function __getKeyboardVariations($src)__
 
 function to obtain keyboard layout variations when user searches something but miss keyboard layout switch
 
@@ -1765,7 +1765,7 @@ Useful stuff
 
 
 
-### <a name="eiseintra-debug"></a>static function __debug($to_echo)__
+### <a name="eiseintra_fn_debug"></a>static function __debug($to_echo)__
 
 This function dumps $to_echo variable using var_export() or simply echoes it, with stack trace ahead
 
@@ -1778,7 +1778,7 @@ __Category__: Debug
 
 
 
-### <a name="eiseintra-buildless"></a>protected function __buildLess()__
+### <a name="eiseintra_fn_buildless"></a>protected function __buildLess()__
 
 This function rebuilds style.css for selected theme using style.less located in the same folder as style.css. 
 REMEMBER TO chmod a+w to this folder!
@@ -1790,7 +1790,7 @@ __Category__: Utilities
 
 
 
-## <a name="eiseintradata"></a>class __eiseIntraData__
+## <a name="cls_eiseintradata"></a>class __eiseIntraData__
 
 eiseIntraData is the class that encapsulates data handling routines
 
@@ -1801,10 +1801,10 @@ Reference table routines (getDataFromCommonViews())
 Archive/Restore routines
 etc
 
-__Package__: eiseIntra  
 __Version__: 2.0beta  
+__Package__: eiseIntra  
 
-### <a name="eiseintradata-arrintradatatypes"></a>static property __$arrIntraDataTypes__
+### <a name="eiseintradata_prop_arrintradatatypes"></a>static property __$arrIntraDataTypes__
 
 $arrIntraDataTypes defines basic type set that is used for conversion of data obtained from the database into user-specific locale.
 
@@ -1826,7 +1826,7 @@ public static $arrIntraDataTypes = array(
 
 
 
-### <a name="eiseintradata-formatbytype2php"></a>public function __formatByType2PHP()__
+### <a name="eiseintradata_fn_formatbytype2php"></a>public function __formatByType2PHP()__
 
 This function formats data for user-friendly output according to user data type provided in $type parameter.
 
@@ -1842,7 +1842,7 @@ __Category__: Data formatting
 
 
 
-### <a name="eiseintradata-formatbytype2sql"></a>public function __formatByType2SQL()__
+### <a name="eiseintradata_fn_formatbytype2sql"></a>public function __formatByType2SQL()__
 
 This function formats data to SQL-query friendly value, not escaped, without quotes.
 
@@ -1858,7 +1858,7 @@ __Category__: Data formatting
 
 
 
-### <a name="eiseintradata-result2json"></a>public function __result2JSON($rs, $arrConf = array())__
+### <a name="eiseintradata_fn_result2json"></a>public function __result2JSON($rs, $arrConf = array())__
 
 This function returns SQL result as JSON string or array, in format that can be understood by eiseIntra's JavaScript fill() methods. Output format is a bit more complex than just list of rows as dictionaries. It also contains some features that scipt interpret for data display:
 - read/write permissions for given field in given tuple
@@ -1883,7 +1883,7 @@ __Category__: Data Output
 
 
 
-### <a name="eiseintradata-unq"></a>public function __unq($sqlReadyValue)__
+### <a name="eiseintradata_fn_unq"></a>public function __unq($sqlReadyValue)__
 
 This function unquotes SQL value previously prepared to be added into SQL code by functions like $oSQL->e(). Same exists in eiseSQL class.
 
@@ -1897,7 +1897,7 @@ __Category__: Data formatting
 
 
 
-### <a name="eiseintradata-decphp2sql"></a>public function __decPHP2SQL($val, $valueIfNull=null)__
+### <a name="eiseintradata_fn_decphp2sql"></a>public function __decPHP2SQL($val, $valueIfNull=null)__
 
 This function converts decimal value from user input locale into SQL-friendly value.
 If $val is empty string it returns $valueIfNull string or 'NULL' string.
@@ -1912,7 +1912,7 @@ __Category__: Data formatting
 
 
 
-### <a name="eiseintradata-decsql2php"></a>public function __decSQL2PHP($val, $decimalPlaces=null)__
+### <a name="eiseintradata_fn_decsql2php"></a>public function __decSQL2PHP($val, $decimalPlaces=null)__
 
 This function converts data fetched from SQL query to string, according to $intra locale settings.
 
@@ -1927,7 +1927,7 @@ __Category__: Data formatting
 
 
 
-### <a name="eiseintradata-datesql2php"></a>public function __dateSQL2PHP($dtVar, $precision='date')__
+### <a name="eiseintradata_fn_datesql2php"></a>public function __dateSQL2PHP($dtVar, $precision='date')__
 
 This function converts date value as it's been fetched from SQL ('YYYY-MM-DD' or any strtotime()-parseable format) into string accoring to $intra locale settings ($intra->conf['dateFormat'] and $intra->conf['timeFormat']). If $precision is not 'date' (e.g. 'time' or 'datetime') it will also adds a time component.
 
@@ -1942,7 +1942,7 @@ __Category__: Data formatting
 
 
 
-### <a name="eiseintradata-datetimesql2php"></a>public function __datetimeSQL2PHP($dtVar)__
+### <a name="eiseintradata_fn_datetimesql2php"></a>public function __datetimeSQL2PHP($dtVar)__
 
 This function converts date value as it's been fetched from SQL ('YYYY-MM-DD' or any strtotime()-parseable format) into string accoring to $intra locale settings ($intra->conf['dateFormat'] and $intra->conf['timeFormat']).
 
@@ -1956,7 +1956,7 @@ __Category__: Data formatting
 
 
 
-### <a name="eiseintradata-datephp2sql"></a>public function __datePHP2SQL($dtVar, $valueIfEmpty="NULL")__
+### <a name="eiseintradata_fn_datephp2sql"></a>public function __datePHP2SQL($dtVar, $valueIfEmpty="NULL")__
 
 This function converts date value received from user input into SQL-friendly value, quoted with single quotes. If origin value is empty string it returns $valueIfEmpty parameter or 'NULL' if it's not set. Origin value is checked for compliance to date format using regular expression $intra->conf['prgDate']. Also $dtVar format accepts <input type="date"> output formatted as 'YYYY-MM-DD' string. If $dtVar format is wrong it returns $valueIfEmpty or 'NULL' string.
 
@@ -1971,7 +1971,7 @@ __Category__: Data formatting
 
 
 
-### <a name="eiseintradata-datetimephp2sql"></a>public function __datetimePHP2SQL($dtVar, $valueIfEmpty="NULL")__
+### <a name="eiseintradata_fn_datetimephp2sql"></a>public function __datetimePHP2SQL($dtVar, $valueIfEmpty="NULL")__
 
 This function converts date/time value received from user input into SQL-friendly string, quoted with single quotes. If origin value is empty string it returns $valueIfEmpty parameter or 'NULL' if it's not set. Origin value is checked for compliance to date format using regular expression $intra->conf['prgDate'] and $intra->conf['prgTime']. Time part is optional. Function also accepts 'YYYY-MM-DD[ HH:MM:SS]' string. If $dtVar format is wrong it returns $valueIfEmpty or 'NULL' string.
 
@@ -1986,7 +1986,7 @@ __Category__: Data formatting
 
 
 
-### <a name="eiseintradata-gettableinfo"></a>public function __getTableInfo($dbName, $tblName)__
+### <a name="eiseintradata_fn_gettableinfo"></a>public function __getTableInfo($dbName, $tblName)__
 
 getTableInfo() funiction retrieves useful MySQL table information: in addition to MySQL's 'SHOW FULL COLUMNS ...' and 'SHOW KEYS FROM ...' it also returns some PHP code that could be added to URL string, SQL queries or evaluated. See description below. Currently it uses [eiseSQL::getTableInfo()](#eisesql_gettableinfo) function.
 
@@ -1999,7 +1999,7 @@ __Returns__: array - see more in [eiseSQL::getTableInfo()](#eisesql_gettableinfo
 
 
 
-### <a name="eiseintradata-getsqlvalue"></a>public function __getSQLValue($col, $flagForArray=false)__
+### <a name="eiseintradata_fn_getsqlvalue"></a>public function __getSQLValue($col, $flagForArray=false)__
 
 getSQLValue() function returns ready-to-eval PHP code to be used in SQL queries. Currently kept for backward compatibility.
 
@@ -2014,7 +2014,7 @@ __Category__: Data formatting
 
 
 
-### <a name="eiseintradata-getmultipkcondition"></a>public function __getMultiPKCondition($arrPK, $strValue)__
+### <a name="eiseintradata_fn_getmultipkcondition"></a>public function __getMultiPKCondition($arrPK, $strValue)__
 
 This tiny function composes WHERE SQL condition for multiple column primary key. It's assumed that column values are  delimited with double-hash ('##').
 
@@ -2027,7 +2027,7 @@ __Category__: Database routines
 
 
 
-### <a name="eiseintradata-getdatafromcommonviews"></a>public function __getDataFromCommonViews()__
+### <a name="eiseintradata_fn_getdatafromcommonviews"></a>public function __getDataFromCommonViews()__
 
 This function reads data from SQL views or tables that's used as foreign key references. This function is widely used in eiseIntra as the data source for <select> elements and AJAX autocomplete (ajax_dropdown) elements. It can retrieve single record or whole recordset that match some criteria. It returns a recordset of value-text pairs with 'optValue' field that correspond to values and 'optText' field that correspond to text. Also it returns 'optTextLocal' for text representation in local language and 'optFlagDeleted' with flag that shows whether record is disabled for use or not.
 
@@ -2047,7 +2047,7 @@ __Category__: Database routines
 
 
 
-### <a name="eiseintradata-arrphp2sql"></a>public function __arrPHP2SQL($arrSrc, $types = array())__
+### <a name="eiseintradata_fn_arrphp2sql"></a>public function __arrPHP2SQL($arrSrc, $types = array())__
 
 This function recursively converts data in associative array according to type definition supplied in $types parameter. Suitable for situations when you need locale-indepedent json.
 
@@ -2058,7 +2058,7 @@ __Parameters__:
 
 
 
-### <a name="eiseintradata-arrsql2php"></a>public function __arrSQL2PHP($arrSrc, $types = array())__
+### <a name="eiseintradata_fn_arrsql2php"></a>public function __arrSQL2PHP($arrSrc, $types = array())__
 
 This function also recursively converts data in associative array according to type definition supplied in $types parameter. Suitable for situations when you need to convert data according to your user locale.
 
@@ -2069,7 +2069,7 @@ __Parameters__:
 
 
 
-### <a name="eiseintradata-getsqlfields"></a>public function __getSQLFields($tableInfo, $data)__
+### <a name="eiseintradata_fn_getsqlfields"></a>public function __getSQLFields($tableInfo, $data)__
 
 This function returns SQL for field values. It can be used either in UPDATE or in INSERT ... SET queries.
 
@@ -2080,7 +2080,7 @@ __Parameters__:
 
 
 
-### <a name="eiseintradata-getbasicdatatype"></a>static function __getBasicDataType($type)__
+### <a name="eiseintradata_fn_getbasicdatatype"></a>static function __getBasicDataType($type)__
 
 This function returns basic data type for provided $type variable. It can be as any MySQL data type as input type used in eiseIntra.
 
@@ -2092,7 +2092,7 @@ __Returns__: string - basic type from keys of eiseIntraData::$arrBasicTypes. If 
 
 
 
-### <a name="eiseintradata-getintradatatype"></a>static function __getIntraDataType()__
+### <a name="eiseintradata_fn_getintradatatype"></a>static function __getIntraDataType()__
 
 This function returns Intra type from key set of $arrIntraDataTypes array above. It takes $type and $field name as parameters, and it can be as Intra types as SQL data types returned by fetch_fields() or getTableInfo() functions.
 
@@ -2103,7 +2103,7 @@ __Parameters__:
 
 
 
-### <a name="eiseintradata-getdecimalplaces"></a>static function __getDecimalPlaces()__
+### <a name="eiseintradata_fn_getdecimalplaces"></a>static function __getDecimalPlaces()__
 
 eiseIntra::getDecimalPlaces() gets actual number of digits beyond decimal separator. It reads original float or string value with "." (period symbol) as delimiter and returns actual number of decimal places skipping end zeros.
 
@@ -2120,15 +2120,15 @@ __Category__: Data formatting
 
 
 
-## <a name="eisesql"></a>class __eiseSQL__
+## <a name="cls_eisesql"></a>class __eiseSQL__
 
 eiseSQL is the class for object wrapper for database access functions. Currently it extends PHP's built-in mysqli class but also it adds some useful shortcuts for most popular functions.
 Also in contains built-in profiler and some functions to profile your SQL query sequence.
 
-__Package__: eiseIntra  
 __Version__: 2.0beta  
+__Package__: eiseIntra  
 
-### <a name="eisesql-arrintra2dbtypemap"></a>public property __$arrIntra2DBTypeMap__
+### <a name="eisesql_prop_arrintra2dbtypemap"></a>public property __$arrIntra2DBTypeMap__
 
 This array maps intra data types into MySQL data types
 
@@ -2147,7 +2147,7 @@ public $arrIntra2DBTypeMap = array(
 
 
 
-### <a name="eisesql-arrdbtypemap"></a>public property __$arrDBTypeMap__
+### <a name="eisesql_prop_arrdbtypemap"></a>public property __$arrDBTypeMap__
 
 This array maps intra data types into MySQL binary data types constants
 
@@ -2185,7 +2185,7 @@ public $arrDBTypeMap = array(
 
 
 
-### <a name="eisesql-__construct"></a>public function ____construct()__
+### <a name="eisesql_fn___construct"></a>public function ____construct()__
 
 Performs connect to the database with parent constructor.
 
@@ -2204,7 +2204,7 @@ __Throws__: eiseSQLException object when connect fails
 
 
 
-### <a name="eisesql-connect"></a>public function __connect()__
+### <a name="eisesql_fn_connect"></a>public function __connect()__
 
 Dummy. Needed for some backward compatibility.
 Do not use.
@@ -2220,7 +2220,7 @@ __Parameters__:
 
 
 
-### <a name="eisesql-selectdb"></a>public function __selectDB($dbname='')__
+### <a name="eisesql_fn_selectdb"></a>public function __selectDB($dbname='')__
 
 Another backward-compatibility function
 Do not use.
@@ -2231,7 +2231,7 @@ __Parameters__:
 
 
 
-### <a name="eisesql-e"></a>public function __e($str, $usage="for_ins_upd")__
+### <a name="eisesql_fn_e"></a>public function __e($str, $usage="for_ins_upd")__
 
 Method e() escapes source string for SQL query using mysql_escape_string() and put escaped string into single quotes.
 Please used it to prevent from SQL injections.
@@ -2246,7 +2246,7 @@ Data formatting
 
 
 
-### <a name="eisesql-unq"></a>public function __unq($sqlReadyValue)__
+### <a name="eisesql_fn_unq"></a>public function __unq($sqlReadyValue)__
 
 This function strips single quotes from both ends of the string. If string is word 'NULL', it returns *NULL*.
 
@@ -2258,7 +2258,7 @@ __Returns__: string
 
 
 
-### <a name="eisesql-secure"></a>public function __secure($arg)__
+### <a name="eisesql_fn_secure"></a>public function __secure($arg)__
 
 This function first quotes the string using eiseSQL::e() function, then it strips quotes with eiseSQL::unq(). So it secures the string from any SQL injection.
 
@@ -2273,7 +2273,7 @@ Data formatting
 
 
 
-### <a name="eisesql-q"></a>public function __q($query)__
+### <a name="eisesql_fn_q"></a>public function __q($query)__
 
 This method executes SQL query and returns MySQL resource.
 Also it collects all necessary data for query profile:  
@@ -2293,7 +2293,7 @@ __Category__: Database routines
 
 
 
-### <a name="eisesql-n"></a>public function __n($mysqli_result)__
+### <a name="eisesql_fn_n"></a>public function __n($mysqli_result)__
 
 This method returns number of rows obtained within MySQL result object.
 Actually it returns $mysqli_result->num_rows property.
@@ -2308,7 +2308,7 @@ __Category__: Database routines
 
 
 
-### <a name="eisesql-f"></a>public function __f($mysqli_result_or_query)__
+### <a name="eisesql_fn_f"></a>public function __f($mysqli_result_or_query)__
 
 This method fetches a row from MySQL result or SQL query passed as a parameter. If you'd like to reduce amount of code and you need to obtain only one record - just pass SQL query directly to this method.
 So it is a little bit more than wrapper around MySQL result::fetch_assoc()
@@ -2323,7 +2323,7 @@ __Category__: Database routines
 
 
 
-### <a name="eisesql-fa"></a>public function __fa($mysqli_result)__
+### <a name="eisesql_fn_fa"></a>public function __fa($mysqli_result)__
 
 This method fetches a row from MySQL result as an enumerated array. So it is just a wrapper around MySQL result::fetch_array()
 
@@ -2337,7 +2337,7 @@ __Category__: Database routines
 
 
 
-### <a name="eisesql-ff"></a>public function __ff($result_or_query)__
+### <a name="eisesql_fn_ff"></a>public function __ff($result_or_query)__
 
 This method fetches field information from MySQL result as MySQL result::fetch_fields(). It is actually a wrapper around it.
 
@@ -2351,7 +2351,7 @@ __Category__: Database routines
 
 
 
-### <a name="eisesql-i"></a>public function __i()__
+### <a name="eisesql_fn_i"></a>public function __i()__
 
 This method returns autoincremental ID value after last `INSERT ...` query in current connection. It is a wrapper over MySQLi::insert_id property.
 
@@ -2361,7 +2361,7 @@ __Category__: Database routines
 
 
 
-### <a name="eisesql-a"></a>public function __a()__
+### <a name="eisesql_fn_a"></a>public function __a()__
 
 This method returns number of rows affected by last `INSERT ...`, `UPDATE ...` or `DELETE ...` query in current connection. It is a wrapper over MySQLi::affected_rows property.
 
@@ -2371,7 +2371,7 @@ __Category__: Database routines
 
 
 
-### <a name="eisesql-d"></a>public function __d($mysqli_result_or_query)__
+### <a name="eisesql_fn_d"></a>public function __d($mysqli_result_or_query)__
 
 This method fetches first value of first row from MySQL result or SQL query passed as a parameter. If you'd like to reduce amount of code and you need to obtain only one record - just pass SQL query directly to this method.
 So it is a little bit more than wrapper around MySQL result::fetch_assoc()
@@ -2386,7 +2386,7 @@ __Category__: Database routines
 
 
 
-### <a name="eisesql-startprofiling"></a>public function __startProfiling()__
+### <a name="eisesql_fn_startprofiling"></a>public function __startProfiling()__
 
 Use this method to start or reset profiling process in your MySQL script. It drops all counters and set `$oSQL->flagProfiling=true`
 
@@ -2394,7 +2394,7 @@ __Category__: Debug
 
 
 
-### <a name="eisesql-showprofileinfo"></a>public function __showProfileInfo()__
+### <a name="eisesql_fn_showprofileinfo"></a>public function __showProfileInfo()__
 
 This function outputs profile info to current standard output. Use it for brief investigation of what's going on within your SQL query sequence.
 
@@ -2402,7 +2402,7 @@ __Category__: Debug
 
 
 
-### <a name="eisesql-getprofileinfo"></a>public function __getProfileInfo()__
+### <a name="eisesql_fn_getprofileinfo"></a>public function __getProfileInfo()__
 
 This function returns profiling as the list of associative arrays for each query.
 
@@ -2417,7 +2417,7 @@ __Category__: Debug
 
 
 
-### <a name="eisesql-gettableinfo"></a>public function __getTableInfo($tblName, $dbName=null)__
+### <a name="eisesql_fn_gettableinfo"></a>public function __getTableInfo($tblName, $dbName=null)__
 
 getTableInfo() funiction retrieves useful MySQL table information: in addition to MySQL's 'SHOW FULL COLUMNS ...' and 'SHOW KEYS FROM ...' it also returns some PHP code that could be added to URL string, SQL queries or evaluated. See description below.
 
